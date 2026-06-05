@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Login | BrickWise AI</title>
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='login.css') }}"
+    >
+
+    <!-- FONT AWESOME -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+
+</head>
+
+<body>
+
+    <div class="background-glow"></div>
+
+    <div class="login-container">
+
+        <!-- LEFT SIDE -->
+
+        <div class="login-left">
+
+            <div class="logo">
+
+                <div class="logo-box">
+                        <i class="fa-solid fa-cube"></i>
+                    </div>
+
+                <span>BrickWise AI</span>
+
+            </div>
+
+            <h1>
+                Welcome <span>Back</span>
+            </h1>
+
+            <p>
+                Access your BrickWise AI workspace and continue building smarter with intelligent AI-powered tools.
+            </p>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+
+        <div class="login-right">
+
+            <form class="login-form" method="post" action="{{ url_for('login') }}">
+
+                <h2>Login</h2>
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="flash {{ category }}">{{ message }}</div>
+                    {% endfor %}
+                {% endif %}
+                {% endwith %}
+
+                <!-- EMAIL -->
+
+                <div class="input-group">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <input
+                        type="text"
+                        name="username"
+                        placeholder="Username"
+                        required>
+
+                </div>
+
+                <!-- PASSWORD -->
+
+                <div class="input-group">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        type="password"
+                        name="password"
+                        placeholder="Password"
+                        required
+                    >
+
+                </div>
+
+                <!-- OPTIONS -->
+
+                <div class="form-options">
+
+                    <label>
+
+                        <input type="checkbox">
+
+                        Remember me
+
+                    </label>
+
+                    <a href="#">
+                        Forgot Password?
+                    </a>
+
+                </div>
+
+                <!-- LOGIN BUTTON -->
+
+                <button
+                    type="submit"
+                    class="login-btn"
+                >
+
+                    Login
+
+                </button>
+
+                <!-- DIVIDER -->
+
+                <div class="divider">
+
+                    <span>OR</span>
+
+                </div>
+
+                <!-- GOOGLE LOGIN -->
+
+                <a href="{{ url_for('google_login') }}" class="google-btn">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                        alt="Google"
+                    >
+                    Continue with Google
+                </a>
+
+                <!-- REGISTER -->
+
+                <div class="register-link">
+
+                    Don't have an account?
+
+                    <a href="/registration">
+                        Register
+                    </a>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

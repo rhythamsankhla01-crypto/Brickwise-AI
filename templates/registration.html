@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Register | BrickWise AI</title>
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='registration.css') }}"
+    >
+
+    <!-- FONT AWESOME -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+
+</head>
+
+<body>
+
+    <div class="background-glow"></div>
+
+    <div class="register-container">
+
+        <!-- LEFT SIDE -->
+        <div class="register-left">
+
+            <div class="logo">
+                <div class="logo-box">
+                    <i class="fa-solid fa-cube"></i>
+                </div>
+                <span>BrickWise AI</span>
+            </div>
+
+            <h1>
+                Create Your <span>Account</span>
+            </h1>
+
+            <p>
+                Join BrickWise AI and start building smarter with AI-powered
+                construction insights and intelligent planning.
+            </p>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="register-right">
+
+            <form
+                class="register-form"
+                method="post"
+                action="{{ url_for('register') }}"
+            >
+
+                <h2>Register</h2>
+
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="flash {{ category }}">{{ message }}</div>
+                    {% endfor %}
+                {% endif %}
+                {% endwith %}
+
+                <!-- FULL NAME -->
+                <div class="input-group">
+                    <i class="fa-solid fa-user"></i>
+
+                    <input
+                        type="text"
+                        name="fullname"
+                        placeholder="Full Name"
+                        required
+                    >
+                </div>
+
+                
+
+                <!-- USERNAME -->
+                <div class="input-group">
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <input
+                        type="text"
+                        name="username"
+                        placeholder="Username"
+                        required
+                    >
+                </div>
+
+                <!-- PASSWORD -->
+                <div class="input-group">
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        type="password"
+                        name="password"
+                        placeholder="Password"
+                        required
+                    >
+                </div>
+
+                <!-- CONFIRM PASSWORD -->
+                <div class="input-group">
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        type="password"
+                        name="confirm_password"
+                        placeholder="Confirm Password"
+                        required
+                    >
+                </div>
+
+                <!-- REGISTER BUTTON -->
+                <button
+                    type="submit"
+                    class="register-btn"
+                >
+                    Create Account
+                </button>
+
+                <!-- DIVIDER -->
+                <div class="divider">
+                    <span>OR</span>
+                </div>
+
+                <!-- GOOGLE BUTTON -->
+                <a href="{{ url_for('google_login') }}" class="google-btn">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                        alt="Google"
+                    >
+
+                    Continue with Google
+                </a>
+
+                <!-- LOGIN -->
+                <div class="login-link">
+                    Already have an account?
+                    <a href="/login">Login</a>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>BrickWise AI</title>
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='home.css') }}"
+    >
+
+    <!-- FONT AWESOME -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- BACKGROUND GLOW -->
+    <div class="background-glow"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <div class="mini-logo">
+                <i class="fa-solid fa-cube"></i>
+            </div>
+
+            <span>
+                BrickWise AI
+            </span>
+
+        </div>
+
+        <div class="nav-buttons">
+
+            <a
+                href="/login"
+                class="login-btn">
+                Login
+            </a>
+
+            <a
+                href="/registration"
+                class="register-btn">
+                Get Started
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <!-- LEFT CONTENT -->
+        <div class="hero-left">
+            <div class="tag">
+                <i class="fa-solid fa-bolt"></i>
+                AI Powered Construction Intelligence
+            </div>
+            <h1>
+                Build Smarter With
+                <span>BrickWise AI</span>
+            </h1>
+            <p>
+                Transform your construction planning with intelligent AI insights,
+                smart estimations, project optimization, and real-time assistance
+                designed for modern builders and engineers.
+            </p>
+            <div class="hero-buttons">
+
+                <a
+                    href="/registration"
+                    class="primary-btn">
+                    Start Free
+                </a>
+
+                <a
+                    href="/login"
+                    class="secondary-btn"
+                >
+                    Explore Platform
+                </a>
+
+            </div>
+
+            <!-- FEATURES -->
+            <div class="features">
+
+                <div class="feature-card">
+
+                    <i class="fa-solid fa-robot"></i>
+
+                    <span>
+                        AI Assistance
+                    </span>
+
+                </div>
+
+                <div class="feature-card">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                    <span>
+                        Smart Planning
+                    </span>
+
+                </div>
+
+                <div class="feature-card">
+
+                    <i class="fa-solid fa-layer-group"></i>
+
+                    <span>
+                        Project Insights
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="hero-right">
+
+            <div class="dashboard-card">
+
+                <div class="dashboard-header">
+
+                    <div class="mini-logo">
+                        <i class="fa-solid fa-cube"></i>
+                    </div>
+
+                    <div>
+                        <h3>BrickWise Dashboard</h3>
+                        <p>AI Project Analysis</p>
+                    </div>
+
+                </div>
+
+                <div class="dashboard-content">
+
+                    <div class="analysis-card">
+
+                        <span>Project Efficiency</span>
+
+                        <h2>94%</h2>
+
+                    </div>
+
+                    <div class="analysis-card">
+
+                        <span>Cost Optimization</span>
+
+                        <h2>87%</h2>
+
+                    </div>
+
+                    <div class="analysis-card full">
+
+                        <span>AI Suggestions Generated</span>
+
+                        <h2>1,284</h2>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Profile | BrickWise AI</title>
+  
+  
+  <link rel="stylesheet" href="{{ url_for('static', filename='profile.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+
+<body>
+<div class="container" >
+
+  <!-- SIDEBAR -->
+  {% include "head.html" %}
+
+  <!-- MAIN -->
+
+  <main class="main-content">
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+      <div class="top-title">
+        <h2>My Profile</h2>
+        <p>Manage your BrickWise AI account and preferences.</p>
+      </div>
+
+      <div class="nav-icons">
+        <i class="fa-regular fa-bell"></i>
+      </div>
+
+    </nav>
+
+    <!-- PROFILE CONTENT -->
+
+    <div class="profile-container">
+
+      <!-- LEFT -->
+
+      <div class="profile-left">
+
+        <div class="profile-card">
+
+          <h2>{{ user.fullname }}</h2>
+
+          <p class="username">{{ user.username }}</p>
+          <!-- <div class="status">
+            <span></span>
+            Active
+          </div> -->
+
+          <!-- <button class="edit-btn">
+            <i class="fa-solid fa-pen"></i>
+            Edit Profile
+          </button> -->
+        </div>
+
+      </div>
+
+      <!-- RIGHT -->
+
+      <div class="profile-right">
+
+        <!-- ACCOUNT -->
+
+        <div class="info-card">
+
+          <div class="card-title">
+            <h3>Account Information</h3>
+          </div>
+
+          <div class="info-grid">
+
+            <div class="info-box">
+              <label>Full Name</label>
+              <input type="text" value="Rhytham Sankhla">
+            </div>
+
+            <div class="info-box">
+              <label>Email Address</label>
+              <input type="email" value="rhytham@gmail.com">
+            </div>
+
+            <div class="info-box">
+              <label>Phone Number</label>
+              <input type="text" value="+91 9876543210">
+            </div>
+
+            <div class="info-box">
+              <label>Location</label>
+              <input type="text" value="Jodhpur, Rajasthan">
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- AI STATS -->
+
+        <div class="info-card">
+
+          <div class="card-title">
+            <h3>AI Usage</h3>
+          </div>
+
+          <div class="stats-grid">
+
+            <div class="stat-box">
+              <h2>124</h2>
+              <p>Projects</p>
+            </div>
+
+            <div class="stat-box">
+              <h2>42</h2>
+              <p>Blueprint Analyses</p>
+            </div>
+
+            <div class="stat-box">
+              <h2>18h</h2>
+              <p>Usage Time</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- SECURITY -->
+
+        <div class="info-card">
+
+          <div class="card-title">
+            <h3>Security</h3>
+          </div>
+
+          <div class="security-buttons">
+
+            <button>
+              <i class="fa-solid fa-lock"></i>
+              Change Password
+            </button>
+
+            <button>
+              <i class="fa-solid fa-shield-halved"></i>
+              Enable 2FA
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+</div>
+
+</body>
+</html>

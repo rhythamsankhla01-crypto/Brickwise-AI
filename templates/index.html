@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>BrickWise AI</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+
+<body>
+
+<div class="container">
+  <!-- SIDEBAR -->
+  {% include "head.html" %}
+  <!-- MAIN -->
+
+  <main class="main-content">
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+      <div class="top-title">
+        <h2>BrickWise AI</h2>
+        <!-- <p>Analyze house drawings, layouts, blueprints and more.</p> -->
+      </div>
+
+      <div class="nav-icons">
+       <a href="/profile" ><i class="fa-regular fa-user"></i></a>
+       <i id="historyToggle" class="fa-regular fa-clone"></i>
+       <a href="/logout" ><i class="fa-regular fa-user" style="color: red;"></i></a>
+      </div>
+
+    </nav>
+
+    <!-- CHAT -->
+    
+    <div class="chat-container">
+      <!-- WELCOME -->
+      <div class="welcome-screen" id="welcomeScreen" {% if messages %}style="display:none;"{% endif %}>
+        <div class="logo-box">
+            <i class="fa-solid fa-cube"></i>
+        </div>
+        <h1>Where planning begins</h1>
+        <p>
+          Upload pdf and image file and let AI analyze and resolve your problems
+        </p>
+
+        <!-- SUGGESTIONS -->
+        <!-- <div class="suggestion-grid">
+
+          <div class="suggestion-card">
+            <h4>ESTIMATION</h4>
+            <p>Estimate house construction material and cost instantly.</p>
+          </div>
+
+          <div class="suggestion-card">
+            <h4>ANALYSIS</h4>
+            <p>Analyze floor plans, dimensions and architecture structure.</p>
+          </div>
+
+          <div class="suggestion-card">
+            <h4>IDEAS</h4>
+            <p>Get modern home design ideas and room optimization tips.</p>
+          </div>
+
+        </div> -->
+
+      </div>
+
+      <!-- MESSAGES -->
+      <div class="chat-messages" id="chatMessages">
+        {% for msg in messages %}
+          <div class="message {{ 'user-message' if msg.role == 'user' else 'bot-message' }}">
+            {{ msg.content }}
+          </div>
+        {% endfor %}
+      </div>
+
+      <!-- INPUT -->
+
+      <form
+    id="chatForm"
+    action="/chats"
+    method="POST"
+    enctype="multipart/form-data"
+    class="input-wrapper"
+    onsubmit="clearTextarea()"
+>
+
+    <!-- PDF FILE INPUT -->
+
+
+    <input
+    type="file"
+    id="fileInput"
+    name="file"
+    accept=".pdf,image/*">
+
+    
+      
+    <textarea
+        id="messageInput"
+        name="message"
+        placeholder="Write a message here..."
+        required
+    ></textarea>
+
+    <div class="input-bottom">
+
+    <div class="ai-btn">
+        <i class="fa-solid fa-file-pdf"></i>
+        Upload PDF or IMAGE + Ask
+    </div>
+
+    <div class="action-buttons">
+
+        <button
+            type="button"
+            id="micBtn"
+            class="mic-btn"
+        >
+            <i class="fa-solid fa-microphone"></i>
+        </button>
+
+        <button
+            type="submit"
+            class="send-btn"
+        >
+            <i class="fa-solid fa-paper-plane"></i>
+        </button>
+
+    </div>
+
+</div>
+
+</form>
+    </div>
+    
+   
+  </main>
+ <div class="history" id="recentHistory">
+      <div class="history-inner">
+
+  <div class="history-top">
+
+    <h3>Recent Chats</h3>
+
+  </div>
+
+  <div class="history-list">
+
+    {% for msg in recent_messages[::-1][:20] %}
+
+      {% if msg.role == "user" %}
+
+        <div class="history-card">
+
+          <p>{{ msg.content[:45] }}...</p>
+
+          <small>{{ msg.time }}</small>
+
+        </div>
+
+      {% endif %}
+
+    {% endfor %}
+
+  </div>
+
+</div>
+</div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

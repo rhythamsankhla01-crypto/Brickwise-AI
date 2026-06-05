@@ -1,0 +1,60 @@
+# from flask import Flask, render_template, request, jsonify
+# from openai import OpenAI
+# from dotenv import load_dotenv
+# import os
+
+# load_dotenv();
+# api_key = os.getenv('OPEN_API_KEY');  # LOAD API KEY
+# if not api_key:
+#     raise RuntimeError('OpenAI API key not found. Set OPENAI_API_KEY or OPEN_API_KEY in .env.');
+
+# client = OpenAI(api_key=api_key);  
+
+# app = Flask(__name__);
+
+
+# @app.route("/")
+# def index():
+#     return render_template("index.html");
+
+
+# @app.route("/chat", methods=["POST"])
+# def chat():
+
+#     # GET JSON DATA FROM JS
+#     data = request.get_json();
+
+#     # GET USER MESSAGE
+#     user_message = data.get("message");
+
+#     try:
+#         response = client.chat.completions.create(
+#             model="gpt-3.5-turbo",
+#             messages=[{"role": "user", "content": user_message}],
+#         )
+
+#         # BOT REPLY
+#         reply = response.choices[0].message.content
+
+#     except Exception as exc:
+#         print(f"OpenAI error: {exc}")
+#         reply = "Sorry, the AI service is unavailable right now. Please try again later."
+
+#     # SEND RESPONSE BACK TO JS
+#     return jsonify({
+#         "reply": reply
+#     })
+
+# if __name__ == "__main__":
+
+#     app.run(debug=True);
+
+
+
+
+
+# Scope	              # Purpose
+
+1. openid	            OpenID Connect login
+2. email	            User email
+3. profile	            Name and profile picture

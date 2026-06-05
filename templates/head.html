@@ -1,0 +1,88 @@
+<aside class="sidebar">
+
+    <div>
+      <div class="logo-sidebar">
+        <h2>BrickWise.</h2>
+      </div>
+
+      <div class="sidebar-menu">
+
+        <a href="/brickwise" class="{% if request.path == '/brickwise' %}active{% endif %}">
+          <div  class="sidebar-link">
+            <div class="left">  
+                <i class="fa-regular fa-message"></i>
+              Chat
+            </div>
+          <span class="badge">NEW</span>
+        </div>
+        </a>
+
+        <a class="{% if request.path == '/profile' %}active{% endif %}" href="/profile" style="color: inherit; text-decoration: none;">
+            <div class="sidebar-link">
+                <div style="text-decoration: none;" class="left" >
+                  <i class="fa-regular fa-user"></i>
+                  My Profile
+            </div>
+            </div>
+        </a>
+
+        <div class="sidebar-link">
+          <div class="left">
+            <i class="fa-solid fa-cube"></i>
+            Gmail
+          </div>
+        </div>
+
+        <div class="sidebar-link">
+          <div class="left">
+            <i class="fa-solid fa-sliders"></i>
+            Fine-tuning
+          </div>
+        </div>
+
+       <a href="/about-brickwise" class="{% if request.path == '/about-brickwise' %}active{% endif %}">
+        <div class="sidebar-link">
+          <div class="left">
+            <i class="fa-regular fa-file-lines"></i>
+            About Us
+          </div>
+        </div>
+       </a>
+
+      </div>
+    </div>
+
+    <!-- BOTTOM -->
+
+    <div class="bottom-menu">
+      <div class="sidebar-link">
+        <div class="left">
+          <i class="fa-solid fa-users"></i>
+          Teams
+        </div>
+      </div>
+
+      <div class="sidebar-link">
+        <div class="left">
+          <i class="fa-solid fa-wallet"></i>
+          Billing
+        </div>
+      </div>
+
+      <div class="sidebar-link">
+        <div class="left">
+          <i class="fa-regular fa-file"></i>
+          Docs
+        </div>
+        <span class="badge">NEW</span>
+      </div>
+
+      <a href="/logout" class="sidebar-link logout-btn">
+          <div class="left">
+              <i class="fa-solid fa-right-from-bracket"></i>
+              <span>Logout</span>
+          </div>
+        </a>
+    </div>
+
+  </aside>

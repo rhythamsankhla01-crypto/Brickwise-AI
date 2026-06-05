@@ -1,0 +1,86 @@
+2026-06-04 22:57:48,812 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-04 22:57:48,812 INFO [33mPress CTRL+C to quit[0m
+2026-06-04 22:57:52,545 INFO 127.0.0.1 - - [04/Jun/2026 22:57:52] "GET / HTTP/1.1" 200 -
+2026-06-04 22:57:52,647 INFO 127.0.0.1 - - [04/Jun/2026 22:57:52] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+2026-06-04 22:57:55,100 INFO 127.0.0.1 - - [04/Jun/2026 22:57:55] "GET /login HTTP/1.1" 200 -
+2026-06-04 22:57:55,136 INFO 127.0.0.1 - - [04/Jun/2026 22:57:55] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2026-06-04 22:57:56,518 INFO 127.0.0.1 - - [04/Jun/2026 22:57:56] "[32mGET /login/google HTTP/1.1[0m" 302 -
+2026-06-04 22:58:02,077 ERROR Exception in google_auth_callback
+Traceback (most recent call last):
+  File "D:\codes\Flask\app.py", line 266, in google_auth_callback
+    token = oauth.google.authorize_access_token()
+  File "D:\codes\Flask\venv\Lib\site-packages\authlib\integrations\flask_client\apps.py", line 156, in authorize_access_token
+    userinfo = self.parse_id_token(
+        token,
+    ...<3 lines>...
+        leeway=leeway,
+    )
+  File "D:\codes\Flask\venv\Lib\site-packages\authlib\integrations\base_client\sync_openid.py", line 64, in parse_id_token
+    key_set = KeySet.import_key_set(self.fetch_jwk_set())
+                                    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\authlib\integrations\base_client\sync_openid.py", line 21, in fetch_jwk_set
+    raise RuntimeError('Missing "jwks_uri" in metadata')
+RuntimeError: Missing "jwks_uri" in metadata
+2026-06-04 22:58:02,082 INFO 127.0.0.1 - - [04/Jun/2026 22:58:02] "[32mGET /login/google/callback?state=dDSzmCJMyALkBqYdYuInodWI3ad9jE&iss=https://accounts.google.com&code=4/0AeoWuM8lhaB585kmIBEbl2G1zK6XaKOS3WtJ57K3NVhQO6MpktlP2Z-GCzkQoZnfbIIH1A&scope=email+profile+https://www.googleapis.com/auth/userinfo.email+openid+https://www.googleapis.com/auth/userinfo.profile&authuser=0&prompt=none HTTP/1.1[0m" 302 -
+2026-06-04 22:58:02,092 INFO 127.0.0.1 - - [04/Jun/2026 22:58:02] "GET /login HTTP/1.1" 200 -
+2026-06-04 22:58:02,184 INFO 127.0.0.1 - - [04/Jun/2026 22:58:02] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2026-06-04 22:59:10,891 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-04 22:59:10,891 INFO [33mPress CTRL+C to quit[0m
+2026-06-04 22:59:37,792 INFO 127.0.0.1 - - [04/Jun/2026 22:59:37] "GET /login HTTP/1.1" 200 -
+2026-06-04 22:59:37,906 INFO 127.0.0.1 - - [04/Jun/2026 22:59:37] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2026-06-04 22:59:38,732 INFO 127.0.0.1 - - [04/Jun/2026 22:59:38] "GET /login HTTP/1.1" 200 -
+2026-06-04 22:59:38,768 INFO 127.0.0.1 - - [04/Jun/2026 22:59:38] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2026-06-04 22:59:38,849 INFO 127.0.0.1 - - [04/Jun/2026 22:59:38] "GET /login HTTP/1.1" 200 -
+2026-06-04 22:59:38,881 INFO 127.0.0.1 - - [04/Jun/2026 22:59:38] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2026-06-04 22:59:39,167 INFO 127.0.0.1 - - [04/Jun/2026 22:59:39] "GET /login HTTP/1.1" 200 -
+2026-06-04 22:59:39,203 INFO 127.0.0.1 - - [04/Jun/2026 22:59:39] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2026-06-04 22:59:39,331 INFO 127.0.0.1 - - [04/Jun/2026 22:59:39] "GET /login HTTP/1.1" 200 -
+2026-06-04 22:59:39,364 INFO 127.0.0.1 - - [04/Jun/2026 22:59:39] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2026-06-04 22:59:39,504 INFO 127.0.0.1 - - [04/Jun/2026 22:59:39] "GET /login HTTP/1.1" 200 -
+2026-06-04 22:59:39,544 INFO 127.0.0.1 - - [04/Jun/2026 22:59:39] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2026-06-04 22:59:39,715 INFO 127.0.0.1 - - [04/Jun/2026 22:59:39] "GET /login HTTP/1.1" 200 -
+2026-06-04 22:59:39,750 INFO 127.0.0.1 - - [04/Jun/2026 22:59:39] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2026-06-04 22:59:42,622 INFO 127.0.0.1 - - [04/Jun/2026 22:59:42] "[32mGET /login/google HTTP/1.1[0m" 302 -
+2026-06-04 22:59:49,792 INFO 127.0.0.1 - - [04/Jun/2026 22:59:49] "[32mGET /login/google/callback?state=Nl3lm0Z9WI6Cp6yJ9fnLbG7tlRhdOg&iss=https://accounts.google.com&code=4/0AeoWuM-Rm5UVe0rnICJW-3bcrgDO4cUsLkOs1qVJLg0wM2DFIjbi-fqKhVJq-DSPhkIhFw&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=0&prompt=none HTTP/1.1[0m" 302 -
+2026-06-04 22:59:49,817 INFO 127.0.0.1 - - [04/Jun/2026 22:59:49] "GET /brickwise HTTP/1.1" 200 -
+2026-06-04 22:59:49,906 INFO 127.0.0.1 - - [04/Jun/2026 22:59:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-04 22:59:49,911 INFO 127.0.0.1 - - [04/Jun/2026 22:59:49] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-04 22:59:55,380 INFO 127.0.0.1 - - [04/Jun/2026 22:59:55] "GET /profile HTTP/1.1" 200 -
+2026-06-04 22:59:55,415 INFO 127.0.0.1 - - [04/Jun/2026 22:59:55] "[36mGET /static/profile.css HTTP/1.1[0m" 304 -
+2026-06-04 22:59:55,417 INFO 127.0.0.1 - - [04/Jun/2026 22:59:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-04 23:01:07,439 INFO 127.0.0.1 - - [04/Jun/2026 23:01:07] "GET /brickwise HTTP/1.1" 200 -
+2026-06-04 23:01:07,479 INFO 127.0.0.1 - - [04/Jun/2026 23:01:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-04 23:01:07,480 INFO 127.0.0.1 - - [04/Jun/2026 23:01:07] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-04 23:01:13,645 INFO 127.0.0.1 - - [04/Jun/2026 23:01:13] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-06-04 23:01:13,669 INFO 127.0.0.1 - - [04/Jun/2026 23:01:13] "GET / HTTP/1.1" 200 -
+2026-06-04 23:01:13,717 INFO 127.0.0.1 - - [04/Jun/2026 23:01:13] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+2026-06-04 23:01:15,646 INFO 127.0.0.1 - - [04/Jun/2026 23:01:15] "GET /login HTTP/1.1" 200 -
+2026-06-04 23:01:15,695 INFO 127.0.0.1 - - [04/Jun/2026 23:01:15] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2026-06-05 22:05:20,475 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-05 22:05:20,476 INFO [33mPress CTRL+C to quit[0m
+2026-06-05 22:05:25,733 INFO 127.0.0.1 - - [05/Jun/2026 22:05:25] "GET / HTTP/1.1" 200 -
+2026-06-05 22:05:25,886 INFO 127.0.0.1 - - [05/Jun/2026 22:05:25] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+2026-06-05 22:05:26,147 INFO 127.0.0.1 - - [05/Jun/2026 22:05:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-05 22:05:28,422 INFO 127.0.0.1 - - [05/Jun/2026 22:05:28] "GET /login HTTP/1.1" 200 -
+2026-06-05 22:05:28,478 INFO 127.0.0.1 - - [05/Jun/2026 22:05:28] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2026-06-05 22:05:36,197 INFO 127.0.0.1 - - [05/Jun/2026 22:05:36] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-05 22:05:36,283 INFO 127.0.0.1 - - [05/Jun/2026 22:05:36] "GET /brickwise HTTP/1.1" 200 -
+2026-06-05 22:05:36,342 INFO 127.0.0.1 - - [05/Jun/2026 22:05:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-05 22:05:36,360 INFO 127.0.0.1 - - [05/Jun/2026 22:05:36] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-05 22:05:39,803 INFO 127.0.0.1 - - [05/Jun/2026 22:05:39] "GET /profile HTTP/1.1" 200 -
+2026-06-05 22:05:39,841 INFO 127.0.0.1 - - [05/Jun/2026 22:05:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-05 22:05:39,856 INFO 127.0.0.1 - - [05/Jun/2026 22:05:39] "[36mGET /static/profile.css HTTP/1.1[0m" 304 -
+2026-06-05 22:05:42,749 INFO 127.0.0.1 - - [05/Jun/2026 22:05:42] "GET /brickwise HTTP/1.1" 200 -
+2026-06-05 22:05:42,808 INFO 127.0.0.1 - - [05/Jun/2026 22:05:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-05 22:05:42,809 INFO 127.0.0.1 - - [05/Jun/2026 22:05:42] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-05 22:21:37,914 INFO 127.0.0.1 - - [05/Jun/2026 22:21:37] "GET /profile HTTP/1.1" 200 -
+2026-06-05 22:21:37,952 INFO 127.0.0.1 - - [05/Jun/2026 22:21:37] "[36mGET /static/profile.css HTTP/1.1[0m" 304 -
+2026-06-05 22:21:37,954 INFO 127.0.0.1 - - [05/Jun/2026 22:21:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-05 22:22:46,425 INFO 127.0.0.1 - - [05/Jun/2026 22:22:46] "GET /profile HTTP/1.1" 200 -
+2026-06-05 22:22:46,461 INFO 127.0.0.1 - - [05/Jun/2026 22:22:46] "[36mGET /static/profile.css HTTP/1.1[0m" 304 -
+2026-06-05 22:22:46,462 INFO 127.0.0.1 - - [05/Jun/2026 22:22:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-05 22:22:48,892 INFO 127.0.0.1 - - [05/Jun/2026 22:22:48] "GET /about-brickwise HTTP/1.1" 200 -
+2026-06-05 22:22:48,944 INFO 127.0.0.1 - - [05/Jun/2026 22:22:48] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
