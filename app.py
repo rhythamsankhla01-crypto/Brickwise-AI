@@ -6,21 +6,29 @@ from authlib.integrations.flask_client import OAuth
 from sqlalchemy import or_, text
 from dotenv import load_dotenv
 import os
-import json
 import secrets
+import io
 from datetime import datetime
-import ollama
 import logging
+import requests   #ADDED
 
 import pytesseract
 from PIL import Image
 
-pytesseract.pytesseract.tesseract_cmd = (
-    r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-);
+# Gmail
+import base64
+from email.mime.text import MIMEText
+from google.oauth2.credentials import Credentials
+from googleapiclient.discovery import build   # Gmail
 
+# =========================
+# CHROMADB + EMBEDDINGS
+# =========================
+import chromadb
+from chromadb.config import Settings
+from sentence_transformers import SentenceTransformer
 
-
+# PDF support
 try:
     from pypdf import PdfReader
     PYPDF_AVAILABLE = True
@@ -28,9 +36,10 @@ except ImportError:
     PdfReader = None
     PYPDF_AVAILABLE = False
 
+pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+
 load_dotenv()
 
-# Logging for OAuth / callback debugging
 logging.basicConfig(
     filename='oauth_errors.log',
     level=logging.INFO,
@@ -39,492 +48,893 @@ logging.basicConfig(
 
 app = Flask(__name__)
 
-# DATABASE CONFIG
+# CONFIG
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///user.db'
 app.config['SECRET_KEY'] = 'brickwise1'
 
-# GOOGLE SIGN IN
+# GOOGLE AUTH
 app.config['GOOGLE_CLIENT_ID'] = (os.getenv('GOOGLE_CLIENT_ID') or '').strip()
 app.config['GOOGLE_CLIENT_SECRET'] = (os.getenv('GOOGLE_CLIENT_SECRET') or '').strip()
 app.config['GOOGLE_OAUTH_ENABLED'] = bool(app.config['GOOGLE_CLIENT_ID'] and app.config['GOOGLE_CLIENT_SECRET'])
-
 app.config['SESSION_COOKIE_SAMESITE'] = 'Lax'
 
 oauth = OAuth(app)
 
 if app.config['GOOGLE_OAUTH_ENABLED']:
     oauth.register(
-        name='google',
+        name="google",
         client_id=app.config['GOOGLE_CLIENT_ID'],
         client_secret=app.config['GOOGLE_CLIENT_SECRET'],
-        # Use Google's OpenID Connect discovery document so Authlib can find jwks_uri
-        server_metadata_url='https://accounts.google.com/.well-known/openid-configuration',  # Users are redirected to log in
-        access_token_url='https://oauth2.googleapis.com/token',
-        authorize_url='https://accounts.google.com/o/oauth2/v2/auth',
-        api_base_url='https://www.googleapis.com/oauth2/v1/',       # Used to fetch user information
-        userinfo_endpoint='https://openidconnect.googleapis.com/v1/userinfo',  # After login, this endpoint returns user details
+        server_metadata_url="https://accounts.google.com/.well-known/openid-configuration",
         client_kwargs={
-            'scope': 'openid email profile',
-            'prompt': 'select_account'      # Ask the user to choose the Google Account
-        },
-        authorize_params={
-            'access_type': 'offline'
-        }
+    "scope": (
+        "openid email profile "
+        "https://www.googleapis.com/auth/gmail.readonly "
+        "https://www.googleapis.com/auth/gmail.send "
+        "https://www.googleapis.com/auth/gmail.modify"
+    )
+}
     )
 
-db = SQLAlchemy(app);
+db = SQLAlchemy(app)
 
-# CHAT HISTORY FOLDER
-CHAT_FOLDER = "chat_history"
 
-# CREATE CHAT FOLDER IF NOT EXISTS
-os.makedirs(CHAT_FOLDER, exist_ok=True);
+# OPENROUTER API KEY
 
-# CREATE PDF FOLDER
-PDF_FOLDER = "pdf_files"
-os.makedirs(PDF_FOLDER, exist_ok=True);
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 
-# CREATE IMAGE FOLDER
-IMAGE_FOLDER = "image_files"
-os.makedirs(IMAGE_FOLDER, exist_ok=True);
+# =========================
+# CHROMADB SETUP (PERSISTENT MEMORY)
+# =========================
+chroma_client = chromadb.PersistentClient(path="chroma_memory")
+chat_collection = chroma_client.get_or_create_collection("chat_memory")
+embedder = SentenceTransformer("all-MiniLM-L6-v2")
 
-# USER DATABASE
+
+# =========================
+# MODELS
+# =========================
 class User(db.Model):
     sno = db.Column(db.Integer, primary_key=True)
     fullname = db.Column(db.String(30))
     username = db.Column(db.String(120), unique=True, nullable=False)
-    password = db.Column(db.String(128), nullable=True)
-    image = db.Column(db.LargeBinary, nullable=True)
-    google_id = db.Column(db.String(100), unique=True, nullable=True)
-    email = db.Column(db.String(120), unique=True, nullable=True)
-    auth_type = db.Column(db.String(20), nullable=False, default='local')
+    password = db.Column(db.String(128))
+    image = db.Column(db.LargeBinary)
+    google_id = db.Column(db.String(100), unique=True)
+    email = db.Column(db.String(120), unique=True)
+    auth_type = db.Column(db.String(20), default='local')
+
+class GmailToken(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(120),nullable=False)
+    access_token = db.Column(db.Text)
+    refresh_token = db.Column(db.Text)
+    token_uri = db.Column(db.Text,default="https://oauth2.googleapis.com/token")
+    created_at = db.Column(db.DateTime,default=datetime.utcnow)
+
 
 class ChatMessage(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    username = db.Column(db.String(20),nullable=False)
-    role = db.Column(db.String(20),nullable=False)
-    content = db.Column(db.Text,nullable=False)
-    timestamp = db.Column(db.DateTime,default=datetime.utcnow);
+    username = db.Column(db.String(120), nullable=False)
+    role = db.Column(db.String(20), nullable=False)
+    content = db.Column(db.Text, nullable=False)
+    timestamp = db.Column(db.DateTime, default=datetime.utcnow)
+
+
+class DocumentContext(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(120), nullable=False)
+    filename = db.Column(db.String(255))
+    extracted_text = db.Column(db.Text, nullable=False)
+    timestamp = db.Column(db.DateTime, default=datetime.utcnow)
+
 
 with app.app_context():
-    db.create_all();
-
-# GOOGLE SIGN IN
-    def ensure_user_columns():
-        with db.engine.begin() as conn:
-            existing = [row[1] for row in conn.execute(text("PRAGMA table_info(user);"))]
-            if 'google_id' not in existing:
-                conn.execute(text("ALTER TABLE user ADD COLUMN google_id VARCHAR(100);"))
-            if 'email' not in existing:
-                conn.execute(text("ALTER TABLE user ADD COLUMN email VARCHAR(120);"))
-            if 'auth_type' not in existing:
-                conn.execute(text("ALTER TABLE user ADD COLUMN auth_type VARCHAR(20) DEFAULT 'local';"))
-
-    ensure_user_columns()
+    db.create_all()
 
 
-# LOGIN REQUIRED DECORATOR
-def login_required(view):
-    @wraps(view)
-    def wrapped_view(**kwargs):
-        if 'user' not in session:
-            return redirect(url_for('login'));
-        return view(**kwargs);
-    return wrapped_view;
+# Gmail
+def get_gmail_service(username):
 
-
-# LOAD CHAT HISTORY
-def load_chat(username):
-    chats = ChatMessage.query.filter_by(
+    token_record = GmailToken.query.filter_by(
         username=username
-    ).order_by(
-        ChatMessage.timestamp
-    ).all()
-
-    messages = []
-
-    for chat in chats:
-        messages.append({
-            "role": chat.role,
-            "content": chat.content,
-            "time": str(chat.timestamp)
-        })
-
-    return messages
-
-
-# SAVE CHAT HISTORY
-def save_chat(username, messages):
-    file_path = os.path.join(CHAT_FOLDER,f"{username}.json");
-    with open(file_path, "w") as file:
-        json.dump(messages, file, indent=4);   #Dump saves python data into JSON
-
-# PDF TEXT EXTRACTOR
-def extract_pdf_text(pdf_path):
-    text = "";
-    if not PYPDF_AVAILABLE:
-        return "";
-    try:
-        reader = PdfReader(pdf_path)
-        for page in reader.pages:
-            page_text = page.extract_text()
-            if page_text:
-                text += page_text + "\n"
-    except Exception as e:
-        print(f"PDF Error: {e}")
-    return text;
-
-
-# IMAGE TEXT EXTRACTOR
-def extract_image_text(image_path):
-    try:
-        image = Image.open(image_path)
-        text = pytesseract.image_to_string(image);
-        return text;
-    except Exception as e:
-        print("OCR Error:", e)
-        return ""
-
-# HOME PAGE
-@app.route("/")
-def home():
-    return render_template("home.html");
-
-# REGISTRATION
-@app.route("/registration", methods=["GET", "POST"])
-def register():
-    if request.method == "POST":
-        fullname = request.form.get('fullname','').strip();
-        username = request.form.get('username','').strip();
-        password = request.form.get('password','');
-        confirm_password = request.form.get('confirm_password','');
-
-        # VALIDATION
-        if not username or not password:
-            flash('Username and password are required.','error')
-            return render_template('registration.html')
-
-        if password != confirm_password:
-            flash('Passwords do not match.','error')
-            return render_template('registration.html')
-
-        # CHECK EXISTING USER
-        existing = User.query.filter_by(username=username).first()
-
-        if existing:
-            flash('Username already taken.','error')
-            return render_template('registration.html');
-
-        # CREATE USER
-        new_user = User(fullname=fullname, username=username, password=password)
-        db.session.add(new_user)
-        db.session.commit();    #commit save database changes permanently
-
-        flash('Registration successful. Please log in.','success')
-        return redirect(url_for('login'));
-    return render_template('registration.html');
-
-# LOGIN
-@app.route('/login', methods=['GET', 'POST'])
-def login():
-    if request.method == 'POST':
-        username = request.form.get('username','').strip();
-        password = request.form.get('password','');
-        user = User.query.filter_by(username=username).first();
-
-        # CHECK USER
-        if user and password == user.password:
-            session['user'] = user.username
-            return redirect('/brickwise')
-
-        flash('Invalid username or password.','error')
-    return render_template('login.html')
-
-
-# GOOGLE SIGN IN
-@app.route('/login/google')
-def google_login():
-    if not app.config['GOOGLE_OAUTH_ENABLED']:
-        flash(
-            'Google OAuth is not configured. Add GOOGLE_CLIENT_ID and GOOGLE_CLIENT_SECRET to your environment or .env file.',
-            'error'
-        )
-        return redirect(url_for('login'))
-
-    redirect_uri = url_for('google_auth_callback', _external=True);
-    return oauth.google.authorize_redirect(redirect_uri);
-
-# 
-@app.route('/login/google/callback')
-def google_auth_callback():
-    if not app.config['GOOGLE_OAUTH_ENABLED']:
-        flash('Google OAuth is not configured. Add GOOGLE_CLIENT_ID and GOOGLE_CLIENT_SECRET to your environment or .env file.','error')
-        return redirect(url_for('login'))
-    
-    try:
-        token = oauth.google.authorize_access_token()
-
-        # Try to fetch userinfo from the provider
-        resp = oauth.google.get('userinfo')   # Return user informations
-        user_info = None;
-        if resp and getattr(resp, 'ok', False):
-            try:
-                user_info = resp.json()
-            except Exception:
-                user_info = None;
-
-        # Fallback: some providers attach id_token payload to token
-        if not user_info:
-            user_info = token.get('userinfo') or token.get('id_token') or {}
-
-        email = user_info.get('email')
-        google_id = user_info.get('sub') or user_info.get('id')
-        fullname = user_info.get('name') or user_info.get('given_name') or (email.split('@')[0] if email else None)
-
-        if not email or not google_id:
-            flash('Google login failed. Email access is required.','error')
-            logging.error('Google login failed: missing email or id. user_info=%s token=%s', user_info, token)
-            return redirect(url_for('login'))
-
-        user = User.query.filter(or_(User.google_id == google_id, User.email == email, User.username == email)).first()
-
-        if user:
-            user.google_id = user.google_id or google_id
-            user.email = user.email or email
-            user.auth_type = 'google'
-            db.session.commit()
-        else:
-            user = User(
-                fullname=fullname,
-                username=email,
-                email=email,
-                google_id=google_id,
-                auth_type='google',
-                password=secrets.token_urlsafe(24)
-            )
-            db.session.add(user);
-            db.session.commit();
-
-        session['user'] = user.username
-        flash('Signed in with Google successfully.', 'success')
-        return redirect(url_for('brickwise'))
-
-    except Exception as exc:
-        # Log full exception for debugging and show a friendly message
-        logging.exception('Exception in google_auth_callback')
-        flash('An error occurred during Google sign-in. Check server logs for details.','error')
-        return redirect(url_for('login'))
-
-
-# LOGOUT
-@app.route('/logout')
-@login_required
-def logout():
-    session.pop('user', None)
-    flash("Successfully logged out");
-    return redirect('/');
-
-
-# PROFILE PAGE
-@app.route('/profile', methods=['GET', 'POST'])
-@login_required
-def profile():
-
-    if 'user' not in session:
-        return redirect(url_for('login'))
-    user = User.query.filter_by(username=session['user']).first()
-
-    # # IMAGE UPLOAD
-    # if request.method == 'POST':
-    #     if 'image' in request.files:
-    #         image = request.files['image'].read()
-    #         user.image = image
-    #         db.session.commit()
-    #         flash('Profile image updated.','success')
-
-    return render_template('profile.html',user=user)
-
-
-
-# BRICKWISE PAGE
-@app.route("/brickwise")
-@login_required
-def brickwise():
-    # LOAD RECENT CHAT HISTORY ONLY for the recent chats sidebar
-    recent_messages = load_chat(session['user'])
-    
-    # Keep the active chat area empty on reload
-    return render_template("index.html",messages=[],recent_messages=recent_messages)
-
-
-# OLLAMA CHAT API
-@app.route("/chats", methods=["POST"])
-@login_required
-def chat():
-    user_message = request.form.get("message", "").strip();
-    username = session.get("user");
-    
-    # PDF UPLOAD
-    uploaded_file = request.files.get("file")
-    if uploaded_file and uploaded_file.filename:
-        filename = secure_filename(uploaded_file.filename)
-        ext = os.path.splitext(filename)[1].lower()
-
-        # PDF
-        if ext == ".pdf":
-            pdf_path = os.path.join(PDF_FOLDER,f"{username}_{filename}");
-            uploaded_file.save(pdf_path);
-            pdf_text = extract_pdf_text(pdf_path);
-            text_file = os.path.join(PDF_FOLDER,f"{username}.txt");
-
-            with open(text_file, "w", encoding="utf-8") as file:
-                file.write(pdf_text);
-
-        # IMAGE
-        elif ext in [".jpg", ".jpeg", ".png", ".webp"]:
-            image_path = os.path.join(IMAGE_FOLDER,f"{username}_{filename}")
-
-            uploaded_file.save(image_path)
-            image_text = extract_image_text(image_path)
-            text_file = os.path.join(IMAGE_FOLDER,f"{username}_ocr.txt")
-
-            with open(text_file, "w", encoding="utf-8") as file:
-                file.write(image_text);
-    
-    # LOAD CHAT HISTORY
-    user_chat = ChatMessage(
-    username=username,
-    role="user",
-    content=user_message
-);
-
-    db.session.add(user_chat);
-    db.session.commit();
-
-    # LOAD PDF CONTENT
-    # LOAD PDF & OCR CONTENT
-    
-    pdf_context = "";
-    ocr_context = "";
-
-    # LOAD PDF TEXT
-    text_file = os.path.join(PDF_FOLDER,f"{username}.txt")
-
-    if os.path.exists(text_file):
-        with open(text_file, "r", encoding="utf-8") as file:
-            pdf_context = file.read()[:12000]
-
-    # LOAD OCR TEXT
-    ocr_file = os.path.join(IMAGE_FOLDER,f"{username}_ocr.txt")
-
-    if os.path.exists(ocr_file):
-        with open(ocr_file, "r", encoding="utf-8") as file:
-            ocr_context = file.read()[:12000];
-    messages = load_chat(username);
-
-    try:
-        ollama_messages = [];
-
-        # PDF Context
-        if pdf_context:
-            ollama_messages.append({
-                "role": "system",
-                "content": f"""
-Answer questions using the uploaded PDF.
-
-If the answer is not present in the PDF, say:
-'I could not find that information in the uploaded PDF.'
-
-PDF CONTENT:
-{pdf_context}
-"""
-        })
-
-        # OCR Context
-        if ocr_context:
-            ollama_messages.append({
-                "role": "system",
-                "content": f"""
-The user uploaded an image.
-
-Extracted text from image:
-
-{ocr_context}
-
-Use this OCR text to answer questions.
-"""
-            })
-
-        # Chat History
-        for msg in messages[-10:]:
-            ollama_messages.append({
-                "role": msg["role"],
-                "content": msg["content"]
-            })
-
-        # Current User Message
-        ollama_messages.append({
-            "role": "user",
-            "content": user_message
-        })
-
-        response = ollama.chat(
-            model="llama3.2",
-            messages=ollama_messages
-        )
-
-        reply = response["message"]["content"]
-
-    except Exception as exc:
-        print("Ollama Error:", exc)
-        reply = f"Error: {str(exc)}"
-
-    # SAVE BOT MESSAGE
-    bot_chat = ChatMessage(
-        username=username,
-        role="assistant",
-        content=reply
+    ).first()
+
+    if not token_record:
+        return None
+
+    creds = Credentials(
+        token=token_record.access_token,
+        refresh_token=token_record.refresh_token,
+        token_uri="https://oauth2.googleapis.com/token",
+        client_id=app.config["GOOGLE_CLIENT_ID"],
+        client_secret=app.config["GOOGLE_CLIENT_SECRET"]
+    )
+ 
+
+    service = build(
+        "gmail",
+        "v1",
+        credentials=creds
     )
 
-    db.session.add(bot_chat)
-    db.session.commit()
-    messages.append({
-        "role": "assistant",
-        "content": reply,
-        "time": str(datetime.utcnow())
+    return service # Gmail
+
+def get_email_body(payload):
+
+    body = ""
+
+    if "parts" in payload:
+
+        for part in payload["parts"]:
+
+            if part.get("mimeType") == "text/plain":
+
+                data = part["body"].get(
+                    "data"
+                )
+
+                if data:
+
+                    body += base64.urlsafe_b64decode(
+                        data
+                    ).decode(
+                        "utf-8",
+                        errors="ignore"
+                    )
+
+    else:
+
+        data = payload["body"].get(
+            "data"
+        )
+
+        if data:
+
+            body += base64.urlsafe_b64decode(
+                data
+            ).decode(
+                "utf-8",
+                errors="ignore"
+            )
+
+    return body
+
+
+# =========================
+# HELPERS
+# =========================
+def login_required(view):
+    @wraps(view)
+    def wrapped(*args, **kwargs):
+        if 'user' not in session:
+            return redirect(url_for('login'))
+        return view(*args, **kwargs)
+    return wrapped
+
+# Gmail
+@app.route("/gmail")
+@login_required
+def gmail_dashboard():
+
+    return render_template(
+        "gmail.html"
+    )
+
+@app.route("/gmail/inbox")
+@login_required
+def gmail_inbox():
+
+    service = get_gmail_service(
+        session["user"]
+    )
+
+    if not service:
+        return jsonify({
+            "error": "Gmail not connected"
+        })
+
+    results = service.users().messages().list(
+        userId="me",
+        maxResults=30
+    ).execute()
+
+    messages = results.get(
+        "messages",
+        []
+    )
+
+    emails = []
+
+    for msg in messages:
+
+        email = service.users().messages().get(
+            userId="me",
+            id=msg["id"],
+            format="full"
+        ).execute()
+
+        headers = email["payload"].get(
+            "headers",
+            []
+        )
+
+        sender = ""
+        subject = ""
+
+        for h in headers:
+
+            if h["name"] == "From":
+                sender = h["value"]
+
+            if h["name"] == "Subject":
+                subject = h["value"]
+
+        body = get_email_body(
+            email["payload"]
+        )
+
+        emails.append({
+
+            "id": msg["id"],
+            "sender": sender,
+            "subject": subject,
+            "body": body[:500]
+
+        })
+
+    return jsonify(emails)
+
+@app.route("/gmail/read/<message_id>")
+@login_required
+def read_email(message_id):
+
+    service = get_gmail_service(
+        session["user"]
+    )
+
+    email = service.users().messages().get(
+        userId="me",
+        id=message_id,
+        format="full"
+    ).execute()
+
+    headers = email["payload"].get(
+        "headers",
+        []
+    )
+
+    sender = ""
+    subject = ""
+
+    for h in headers:
+
+        if h["name"] == "From":
+            sender = h["value"]
+
+        if h["name"] == "Subject":
+            subject = h["value"]
+
+    body = get_email_body(
+        email["payload"]
+    )
+
+    return jsonify({
+
+        "id": message_id,
+        "sender": sender,
+        "subject": subject,
+        "body": body
+
     })
-    save_chat(username, messages)
+
+@app.route(
+    "/gmail/send",
+    methods=["POST"]
+)
+
+@login_required
+def send_email():
+
+    service = get_gmail_service(
+        session["user"]
+    )
+
+    recipient = request.form.get(
+        "to"
+    )
+
+    subject = request.form.get(
+        "subject"
+    )
+
+    body = request.form.get(
+        "body"
+    )
+
+    message = MIMEText(body)
+
+    message["to"] = recipient
+
+    message["subject"] = subject
+
+    raw = base64.urlsafe_b64encode(
+        message.as_bytes()
+    ).decode()
+
+    service.users().messages().send(
+        userId="me",
+        body={"raw": raw}
+    ).execute()
+
+    return jsonify({
+        "status": "Email sent"
+    })
+
+
+@app.route(
+    "/gmail/reply",
+    methods=["POST"]
+)
+@login_required
+def gmail_reply():
+
+    service = get_gmail_service(
+        session["user"]
+    )
+
+    recipient = request.form.get(
+        "to"
+    )
+
+    subject = request.form.get(
+        "subject"
+    )
+
+    body = request.form.get(
+        "body"
+    )
+
+    message = MIMEText(body)
+
+    message["to"] = recipient
+
+    message["subject"] = "Re: " + subject
+
+    raw = base64.urlsafe_b64encode(
+        message.as_bytes()
+    ).decode()
+
+    service.users().messages().send(
+        userId="me",
+        body={
+            "raw": raw
+        }
+    ).execute()
+
+    return jsonify({
+        "success": True
+    })
+
+@app.route(
+    "/gmail/generate_reply",
+    methods=["POST"]
+)
+@login_required
+def generate_reply():
+
+    email_content = request.form.get(
+        "content"
+    )
+
+    prompt = f"""
+Generate a professional email reply.
+
+Email:
+
+{email_content}
+"""
+
+    headers = {
+        "Authorization": f"Bearer {OPENROUTER_API_KEY}",
+        "Content-Type": "application/json"
+    }
+
+    payload = {
+
+        "model":
+        "meta-llama/llama-3.1-8b-instruct",
+
+        "messages": [
+            {
+                "role": "user",
+                "content": prompt
+            }
+        ]
+    }
+
+    response = requests.post(
+        "https://openrouter.ai/api/v1/chat/completions",
+        headers=headers,
+        json=payload
+    )
+
+    reply = response.json()[
+        "choices"
+    ][0]["message"]["content"]
+
     return jsonify({
         "reply": reply
     })
 
+@app.route("/gmail/analyze")
+@login_required
+def gmail_analyze():
+
+    service = get_gmail_service(
+        session["user"]
+    )
+
+    results = service.users().messages().list(
+        userId="me",
+        maxResults=15
+    ).execute()
+
+    messages = results.get(
+        "messages",
+        []
+    )
+
+    email_text = ""
+
+    for msg in messages:
+
+        data = service.users().messages().get(
+            userId="me",
+            id=msg["id"]
+        ).execute()
+
+        headers = data["payload"].get(
+            "headers",
+            []
+        )
+
+        subject = ""
+
+        sender = ""
+
+        for h in headers:
+
+            if h["name"] == "Subject":
+                subject = h["value"]
+
+            if h["name"] == "From":
+                sender = h["value"]
+
+        email_text += f"""
+From: {sender}
+Subject: {subject}
+
+"""
+
+    prompt = f"""
+Analyze these emails.
+
+Provide:
+
+1. Summary
+2. Important Emails
+3. Tasks
+4. Deadlines
+5. Urgent Actions
+
+Emails:
+
+{email_text}
+"""
+
+    headers = {
+        "Authorization": f"Bearer {OPENROUTER_API_KEY}",
+        "Content-Type": "application/json"
+    }
+
+    payload = {
+        "model":"meta-llama/llama-3.1-8b-instruct",
+        "messages":[
+            {
+                "role":"user",
+                "content":prompt
+            }
+        ]
+    }
+
+    response = requests.post(
+        "https://openrouter.ai/api/v1/chat/completions",
+        headers=headers,
+        json=payload
+    )
+
+    analysis = response.json()["choices"][0]["message"]["content"]
+
+    return jsonify({
+        "analysis": analysis
+    })
+
+
+def load_chat(username):
+    chats = ChatMessage.query.filter_by(username=username).order_by(ChatMessage.timestamp).all()
+    return [{"role": c.role, "content": c.content, "time": str(c.timestamp)} for c in chats]
+
 
 # =========================
-# CLEAR CHAT HISTORY
+# CHROMA MEMORY FUNCTIONS
 # =========================
+def add_to_memory(username, text, role):
+    embedding = embedder.encode(text).tolist()
 
+    chat_collection.add(
+        embeddings=[embedding],
+        documents=[text],
+        ids=[f"{username}_{datetime.utcnow().timestamp()}"],
+        metadatas=[{"username": username, "role": role}]
+    )
+
+
+def get_relevant_memory(username, query, k=5):
+    query_embedding = embedder.encode(query).tolist()
+
+    results = chat_collection.query(
+        query_embeddings=[query_embedding],
+        n_results=k,
+        where={"username": username}
+    )
+
+    if results and results["documents"]:
+        return "\n".join(results["documents"][0])
+    return ""
+
+
+# =========================
+# TEXT EXTRACTION
+# =========================
+def extract_pdf(file_stream):
+    if not PYPDF_AVAILABLE:
+        return "PDF library missing. Run: pip install pypdf"
+
+    text = ""
+    try:
+        reader = PdfReader(file_stream)
+        for page in reader.pages:
+            t = page.extract_text()
+            if t:
+                text += t + "\n"
+
+        if not text.strip():
+            return "Scanned PDF detected. No readable text found."
+        return text
+
+    except Exception as e:
+        return f"PDF error: {e}"
+
+
+def extract_image(file_stream):
+    try:
+        img = Image.open(file_stream)
+        text = pytesseract.image_to_string(img)
+
+        if not text.strip():
+            return "No text detected in image."
+        return text
+
+    except Exception as e:
+        return f"OCR error: {e}"
+
+
+# ROUTES
+
+@app.route("/")
+def home():
+    return render_template("home.html")
+
+
+@app.route("/registration", methods=["GET", "POST"])
+def register():
+    if request.method == "POST":
+        username = request.form.get("username", "").strip()
+        password = request.form.get("password", "")
+        confirm = request.form.get("confirm_password", "")
+
+        if not username or not password:
+            flash("Required fields missing", "error")
+            return render_template("registration.html")
+
+        if password != confirm:
+            flash("Passwords do not match", "error")
+            return render_template("registration.html")
+
+        if User.query.filter_by(username=username).first():
+            flash("User exists", "error")
+            return render_template("registration.html")
+
+        db.session.add(User(username=username, password=password))
+        db.session.commit()
+
+        flash("Registered successfully")
+        return redirect("/login")
+
+    return render_template("registration.html")
+
+
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    if request.method == "POST":
+        u = request.form.get("username")
+        p = request.form.get("password")
+
+        user = User.query.filter_by(username=u).first()
+
+        if user and user.password == p:
+            session['user'] = user.username
+            return redirect("/brickwise")
+
+        flash("Invalid login")
+
+    return render_template("login.html")
+
+
+@app.route("/brickwise")
+@login_required
+def brickwise():
+    return render_template("index.html", recent_messages=load_chat(session['user']))
+
+
+# =========================
+# CHAT + FILE UPLOAD
+# =========================
+@app.route("/chats", methods=["POST"])
+@login_required
+def chat():
+    username = session['user']
+    message = request.form.get("message", "").strip()
+    file = request.files.get("file")
+
+    if not message and not file:
+        return jsonify({"reply": "Please enter a message or upload a file."})
+
+    # FILE UPLOAD
+    if file and file.filename:
+        filename = secure_filename(file.filename)
+        ext = os.path.splitext(filename)[1].lower()
+
+        file_bytes = file.read()
+        stream = io.BytesIO(file_bytes)
+
+        if ext == ".pdf":
+            extracted = extract_pdf(stream)
+        elif ext in [".jpg", ".jpeg", ".png", ".webp"]:
+            extracted = extract_image(stream)
+        else:
+            extracted = "Unsupported file format"
+
+        db.session.add(DocumentContext(
+            username=username,
+            filename=filename,
+            extracted_text=extracted
+        ))
+        db.session.commit()
+
+        add_to_memory(username, extracted, "document")
+
+    # SAVE USER MESSAGE
+    db.session.add(ChatMessage(username=username, role="user", content=message))
+    db.session.commit()
+
+    add_to_memory(username, message, "user")
+
+    # RAG MEMORY FETCH
+    rag_memory = get_relevant_memory(username, message)
+
+    # RECENT HISTORY
+    recent_history = ChatMessage.query.filter_by(username=username)\
+        .order_by(ChatMessage.timestamp.desc())\
+        .limit(10)\
+        .all()
+
+    recent_history = list(reversed(recent_history))
+
+    # DOCUMENT CONTEXT
+    latest_doc = (
+    DocumentContext.query
+    .filter_by(username=username)
+    .order_by(DocumentContext.timestamp.desc())
+    .first()
+)
+
+    context_text = latest_doc.extracted_text[:80000] if latest_doc else ""
+
+    # SYSTEM PROMPT
+    system_prompt = f"""
+You are BrickWise AI.
+
+LONG TERM MEMORY (RAG):
+{rag_memory}
+
+DOCUMENT CONTEXT:
+{context_text}
+
+RULE:
+- Use past memory to answer consistently
+- Remember user preferences
+"""
+
+    messages = [{"role": "system", "content": system_prompt}]
+
+    for m in recent_history:
+        messages.append({
+            "role": m.role,
+            "content": m.content
+        })
+
+    # =========================
+    # OPENROUTER FAST MODEL (FREE)
+    # =========================
+    headers = {
+        "Authorization": f"Bearer {OPENROUTER_API_KEY}",
+        "Content-Type": "application/json"
+    }
+
+    payload = {
+    "model": "meta-llama/llama-3.1-8b-instruct",  # meta-llama/llama-3.1-8b-instruct meta-llama/llama-3.1-8b-instruct:free meta-llama/llama-3.2-3b-instruct:free
+    "messages": messages,
+    "temperature": 0.7,
+    "max_tokens": 800
+}
+
+    response = requests.post(
+        "https://openrouter.ai/api/v1/chat/completions",
+        headers=headers,
+        json=payload
+    )
+
+    if response.status_code == 200:
+        reply = response.json()["choices"][0]["message"]["content"]
+    else:
+        reply = f"OpenRouter Error: {response.text}"
+
+    db.session.add(ChatMessage(username=username, role="assistant", content=reply))
+    db.session.commit()
+
+    add_to_memory(username, reply, "assistant")
+
+    return jsonify({"reply": reply})
+
+
+# =========================
+# CLEAR CHAT
+# =========================
 @app.route("/clear_chat")
 @login_required
 def clear_chat():
+    username = session['user']
 
-    username = session.get("user");
-    file_path = os.path.join(CHAT_FOLDER,f"{username}.json");
-    ChatMessage.query.filter_by(
-        username=username
-    ).delete();
-    db.session.commit();
-    flash("Chat history cleared.");
-    return redirect("/brickwise");
+    ChatMessage.query.filter_by(username=username).delete()
+    DocumentContext.query.filter_by(username=username).delete()
 
+    db.session.commit()
 
-# ABOUT PAGE ROUTE
-@app.route('/about-brickwise')
-def about():
-    return render_template('about.html');
+    flash("Cleared successfully")
+    return redirect("/brickwise")
 
 
-# =========================
-# RUN APP
-# =========================
+@app.route("/logout")
+def logout():
+    session.clear()
+    return redirect("/")
+
+
+@app.route("/login/google")
+def google_login():
+    redirect_uri = url_for(
+        "google_callback",
+        _external=True
+    )
+
+    print("Redirect URI:", redirect_uri)
+
+    return oauth.google.authorize_redirect(
+        redirect_uri
+    )
+
+@app.route("/auth/google/callback")
+def google_callback():
+    try:
+        token = oauth.google.authorize_access_token()
+        session["gmail_token"] = token
+
+        user_info = token.get("userinfo")
+
+        if not user_info:
+            user_info = oauth.google.userinfo()
+
+        google_id = user_info.get("sub")
+        email = user_info.get("email")
+        fullname = user_info.get("name")
+
+        user = User.query.filter_by(
+            google_id=google_id
+        ).first()
+
+        if not user and email:
+            user = User.query.filter_by(
+                email=email
+            ).first()
+
+        if not user:
+            base_username = email.split("@")[0]
+
+            username = base_username
+            count = 1
+
+            while User.query.filter_by(
+                username=username
+            ).first():
+                username = f"{base_username}{count}"
+                count += 1
+
+            user = User(
+                fullname=fullname,
+                username=username,
+                email=email,
+                google_id=google_id,
+                auth_type="google"
+            )
+
+            db.session.add(user)
+            db.session.commit()
+
+        else:
+            if not user.google_id:
+                user.google_id = google_id
+
+            if not user.email:
+                user.email = email
+
+            user.auth_type = "google"
+
+            db.session.commit()
+            
+        #Gmail
+        gmail_token = GmailToken.query.filter_by(username=user.username).first()
+
+        if not gmail_token:
+
+            gmail_token = GmailToken(
+                username=user.username
+            )
+
+        db.session.add(gmail_token)
+
+        gmail_token.access_token = token.get("access_token")
+        gmail_token.refresh_token = token.get("refresh_token")
+
+        db.session.commit()
+
+
+        session["user"] = user.username
+
+        flash("Logged in successfully", "success")
+
+        return redirect(url_for("brickwise"))
+
+    except Exception as e:
+        logging.exception("Google OAuth Error")
+
+        flash(
+            f"Google Login Failed: {str(e)}",
+            "error"
+        )
+
+        return redirect(url_for("login"))
+    
 if __name__ == "__main__":
-    app.run(debug=True);
+    app.run(debug=True)

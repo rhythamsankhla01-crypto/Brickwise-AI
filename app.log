@@ -1,0 +1,2579 @@
+2026-06-10 10:36:54,441 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-10 10:36:54,442 INFO [33mPress CTRL+C to quit[0m
+2026-06-10 10:36:56,557 INFO 127.0.0.1 - - [10/Jun/2026 10:36:56] "GET / HTTP/1.1" 200 -
+2026-06-10 10:36:56,653 INFO 127.0.0.1 - - [10/Jun/2026 10:36:56] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+2026-06-10 10:36:56,975 INFO 127.0.0.1 - - [10/Jun/2026 10:36:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-10 10:36:58,539 INFO 127.0.0.1 - - [10/Jun/2026 10:36:58] "GET /login HTTP/1.1" 200 -
+2026-06-10 10:36:58,573 INFO 127.0.0.1 - - [10/Jun/2026 10:36:58] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2026-06-10 10:37:00,927 INFO 127.0.0.1 - - [10/Jun/2026 10:37:00] "GET /registration HTTP/1.1" 200 -
+2026-06-10 10:37:00,954 INFO 127.0.0.1 - - [10/Jun/2026 10:37:00] "[36mGET /static/registration.css HTTP/1.1[0m" 304 -
+2026-06-10 10:37:10,601 INFO 127.0.0.1 - - [10/Jun/2026 10:37:10] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-10 10:37:10,619 INFO 127.0.0.1 - - [10/Jun/2026 10:37:10] "GET /brickwise HTTP/1.1" 200 -
+2026-06-10 10:37:10,639 INFO 127.0.0.1 - - [10/Jun/2026 10:37:10] "GET /static/style.css HTTP/1.1" 200 -
+2026-06-10 10:37:10,663 INFO 127.0.0.1 - - [10/Jun/2026 10:37:10] "GET /static/script.js HTTP/1.1" 200 -
+2026-06-10 10:37:13,907 INFO 127.0.0.1 - - [10/Jun/2026 10:37:13] "GET /profile HTTP/1.1" 200 -
+2026-06-10 10:37:13,925 INFO 127.0.0.1 - - [10/Jun/2026 10:37:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-10 10:37:13,934 INFO 127.0.0.1 - - [10/Jun/2026 10:37:13] "[36mGET /static/profile.css HTTP/1.1[0m" 304 -
+2026-06-10 10:37:47,185 INFO 127.0.0.1 - - [10/Jun/2026 10:37:47] "GET /brickwise HTTP/1.1" 200 -
+2026-06-10 10:37:47,212 INFO 127.0.0.1 - - [10/Jun/2026 10:37:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-10 10:37:47,213 INFO 127.0.0.1 - - [10/Jun/2026 10:37:47] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-10 10:37:54,228 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-10 10:37:54,240 INFO 127.0.0.1 - - [10/Jun/2026 10:37:54] "POST /chats HTTP/1.1" 200 -
+2026-06-10 10:38:04,661 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-10 10:38:04,674 INFO 127.0.0.1 - - [10/Jun/2026 10:38:04] "POST /chats HTTP/1.1" 200 -
+2026-06-10 10:38:26,993 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-10 10:38:27,004 INFO 127.0.0.1 - - [10/Jun/2026 10:38:27] "POST /chats HTTP/1.1" 200 -
+2026-06-10 10:39:39,470 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-10 10:39:39,482 INFO 127.0.0.1 - - [10/Jun/2026 10:39:39] "POST /chats HTTP/1.1" 200 -
+2026-06-10 10:43:20,458 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-10 10:43:20,458 INFO [33mPress CTRL+C to quit[0m
+2026-06-10 10:43:25,383 INFO 127.0.0.1 - - [10/Jun/2026 10:43:25] "GET /brickwise HTTP/1.1" 200 -
+2026-06-10 10:43:25,459 INFO 127.0.0.1 - - [10/Jun/2026 10:43:25] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-10 10:43:25,459 INFO 127.0.0.1 - - [10/Jun/2026 10:43:25] "GET /static/style.css HTTP/1.1" 200 -
+2026-06-10 10:43:58,530 INFO 127.0.0.1 - - [10/Jun/2026 10:43:58] "GET /brickwise HTTP/1.1" 200 -
+2026-06-10 10:43:58,563 INFO 127.0.0.1 - - [10/Jun/2026 10:43:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-10 10:43:58,565 INFO 127.0.0.1 - - [10/Jun/2026 10:43:58] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-10 10:44:34,953 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-10 10:44:34,968 INFO 127.0.0.1 - - [10/Jun/2026 10:44:34] "POST /chats HTTP/1.1" 200 -
+2026-06-10 10:45:41,306 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-10 10:45:41,318 INFO 127.0.0.1 - - [10/Jun/2026 10:45:41] "POST /chats HTTP/1.1" 200 -
+2026-06-10 10:45:55,980 INFO 127.0.0.1 - - [10/Jun/2026 10:45:55] "GET /brickwise HTTP/1.1" 200 -
+2026-06-10 10:45:55,996 INFO 127.0.0.1 - - [10/Jun/2026 10:45:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-10 10:45:55,997 INFO 127.0.0.1 - - [10/Jun/2026 10:45:55] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-10 10:47:04,970 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-10 10:47:04,970 INFO [33mPress CTRL+C to quit[0m
+2026-06-10 10:47:56,175 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-10 10:47:56,202 INFO 127.0.0.1 - - [10/Jun/2026 10:47:56] "POST /chats HTTP/1.1" 200 -
+2026-06-10 10:48:22,929 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-10 10:48:22,943 INFO 127.0.0.1 - - [10/Jun/2026 10:48:22] "POST /chats HTTP/1.1" 200 -
+2026-06-10 10:48:45,484 INFO 127.0.0.1 - - [10/Jun/2026 10:48:45] "GET /brickwise HTTP/1.1" 200 -
+2026-06-10 10:48:45,548 INFO 127.0.0.1 - - [10/Jun/2026 10:48:45] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-10 10:48:45,560 INFO 127.0.0.1 - - [10/Jun/2026 10:48:45] "GET /static/style.css HTTP/1.1" 200 -
+2026-06-10 10:49:47,097 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-10 10:49:47,109 INFO 127.0.0.1 - - [10/Jun/2026 10:49:47] "POST /chats HTTP/1.1" 200 -
+2026-06-10 10:50:24,020 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-10 10:50:24,034 INFO 127.0.0.1 - - [10/Jun/2026 10:50:24] "POST /chats HTTP/1.1" 200 -
+2026-06-10 10:50:34,544 INFO 127.0.0.1 - - [10/Jun/2026 10:50:34] "GET /brickwise HTTP/1.1" 200 -
+2026-06-10 10:50:34,565 INFO 127.0.0.1 - - [10/Jun/2026 10:50:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-10 10:50:34,566 INFO 127.0.0.1 - - [10/Jun/2026 10:50:34] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-10 10:50:38,566 INFO 127.0.0.1 - - [10/Jun/2026 10:50:38] "GET /brickwise HTTP/1.1" 200 -
+2026-06-10 10:50:38,582 INFO 127.0.0.1 - - [10/Jun/2026 10:50:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-10 10:50:38,582 INFO 127.0.0.1 - - [10/Jun/2026 10:50:38] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-10 20:22:00,173 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-10 20:22:00,173 INFO [33mPress CTRL+C to quit[0m
+2026-06-10 20:22:14,365 INFO 127.0.0.1 - - [10/Jun/2026 20:22:14] "GET / HTTP/1.1" 200 -
+2026-06-10 20:22:14,469 INFO 127.0.0.1 - - [10/Jun/2026 20:22:14] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+2026-06-10 20:22:14,714 INFO 127.0.0.1 - - [10/Jun/2026 20:22:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-10 20:22:26,359 INFO 127.0.0.1 - - [10/Jun/2026 20:22:26] "GET /login HTTP/1.1" 200 -
+2026-06-10 20:22:26,409 INFO 127.0.0.1 - - [10/Jun/2026 20:22:26] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2026-06-10 20:22:36,635 INFO 127.0.0.1 - - [10/Jun/2026 20:22:36] "GET /registration HTTP/1.1" 200 -
+2026-06-10 20:22:36,675 INFO 127.0.0.1 - - [10/Jun/2026 20:22:36] "[36mGET /static/registration.css HTTP/1.1[0m" 304 -
+2026-06-10 20:22:53,680 INFO 127.0.0.1 - - [10/Jun/2026 20:22:53] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-10 20:22:53,715 INFO 127.0.0.1 - - [10/Jun/2026 20:22:53] "GET /brickwise HTTP/1.1" 200 -
+2026-06-10 20:22:53,758 INFO 127.0.0.1 - - [10/Jun/2026 20:22:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-10 20:22:53,760 INFO 127.0.0.1 - - [10/Jun/2026 20:22:53] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-10 20:23:06,818 INFO 127.0.0.1 - - [10/Jun/2026 20:23:06] "GET /about-brickwise HTTP/1.1" 200 -
+2026-06-10 20:23:06,863 INFO 127.0.0.1 - - [10/Jun/2026 20:23:06] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+2026-06-10 20:23:11,023 INFO 127.0.0.1 - - [10/Jun/2026 20:23:11] "GET /profile HTTP/1.1" 200 -
+2026-06-10 20:23:11,049 INFO 127.0.0.1 - - [10/Jun/2026 20:23:11] "[36mGET /static/profile.css HTTP/1.1[0m" 304 -
+2026-06-10 20:23:11,051 INFO 127.0.0.1 - - [10/Jun/2026 20:23:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-10 20:23:13,781 INFO 127.0.0.1 - - [10/Jun/2026 20:23:13] "GET /brickwise HTTP/1.1" 200 -
+2026-06-10 20:23:13,814 INFO 127.0.0.1 - - [10/Jun/2026 20:23:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-10 20:23:13,815 INFO 127.0.0.1 - - [10/Jun/2026 20:23:13] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-10 20:23:44,300 INFO 127.0.0.1 - - [10/Jun/2026 20:23:44] "GET /profile HTTP/1.1" 200 -
+2026-06-10 20:23:44,343 INFO 127.0.0.1 - - [10/Jun/2026 20:23:44] "[36mGET /static/profile.css HTTP/1.1[0m" 304 -
+2026-06-10 20:23:44,344 INFO 127.0.0.1 - - [10/Jun/2026 20:23:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-10 20:28:53,254 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-10 20:28:53,266 INFO 127.0.0.1 - - [10/Jun/2026 20:28:53] "POST /chats HTTP/1.1" 200 -
+2026-06-10 20:32:32,511 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-10 20:32:32,512 INFO [33mPress CTRL+C to quit[0m
+2026-06-10 20:32:36,145 INFO 127.0.0.1 - - [10/Jun/2026 20:32:36] "GET /brickwise HTTP/1.1" 200 -
+2026-06-10 20:32:36,280 INFO 127.0.0.1 - - [10/Jun/2026 20:32:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-10 20:32:36,291 INFO 127.0.0.1 - - [10/Jun/2026 20:32:36] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-10 20:33:28,403 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-10 20:33:28,416 INFO 127.0.0.1 - - [10/Jun/2026 20:33:28] "POST /chats HTTP/1.1" 200 -
+2026-06-10 20:41:49,042 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-10 20:41:49,042 INFO [33mPress CTRL+C to quit[0m
+2026-06-10 20:41:50,897 INFO 127.0.0.1 - - [10/Jun/2026 20:41:50] "GET /brickwise HTTP/1.1" 200 -
+2026-06-10 20:41:51,033 INFO 127.0.0.1 - - [10/Jun/2026 20:41:51] "GET /static/script.js HTTP/1.1" 200 -
+2026-06-10 20:41:51,039 INFO 127.0.0.1 - - [10/Jun/2026 20:41:51] "GET /static/style.css HTTP/1.1" 200 -
+2026-06-10 20:41:51,275 INFO 127.0.0.1 - - [10/Jun/2026 20:41:51] "GET /brickwise HTTP/1.1" 200 -
+2026-06-10 20:41:51,304 INFO 127.0.0.1 - - [10/Jun/2026 20:41:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-10 20:41:51,305 INFO 127.0.0.1 - - [10/Jun/2026 20:41:51] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-10 20:41:51,422 INFO 127.0.0.1 - - [10/Jun/2026 20:41:51] "GET /brickwise HTTP/1.1" 200 -
+2026-06-10 20:41:51,452 INFO 127.0.0.1 - - [10/Jun/2026 20:41:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-10 20:41:51,453 INFO 127.0.0.1 - - [10/Jun/2026 20:41:51] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-10 20:41:51,552 INFO 127.0.0.1 - - [10/Jun/2026 20:41:51] "GET /brickwise HTTP/1.1" 200 -
+2026-06-10 20:41:51,584 INFO 127.0.0.1 - - [10/Jun/2026 20:41:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-10 20:41:51,585 INFO 127.0.0.1 - - [10/Jun/2026 20:41:51] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-10 20:41:51,707 INFO 127.0.0.1 - - [10/Jun/2026 20:41:51] "GET /brickwise HTTP/1.1" 200 -
+2026-06-10 20:41:51,740 INFO 127.0.0.1 - - [10/Jun/2026 20:41:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-10 20:41:51,741 INFO 127.0.0.1 - - [10/Jun/2026 20:41:51] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-10 20:41:51,937 INFO 127.0.0.1 - - [10/Jun/2026 20:41:51] "GET /brickwise HTTP/1.1" 200 -
+2026-06-10 20:41:51,974 INFO 127.0.0.1 - - [10/Jun/2026 20:41:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-10 20:41:51,975 INFO 127.0.0.1 - - [10/Jun/2026 20:41:51] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-10 20:41:52,105 INFO 127.0.0.1 - - [10/Jun/2026 20:41:52] "GET /brickwise HTTP/1.1" 200 -
+2026-06-10 20:41:52,134 INFO 127.0.0.1 - - [10/Jun/2026 20:41:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-10 20:41:52,135 INFO 127.0.0.1 - - [10/Jun/2026 20:41:52] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-10 20:42:09,092 INFO 127.0.0.1 - - [10/Jun/2026 20:42:09] "[33mGET /brickwise/clear-chat HTTP/1.1[0m" 404 -
+2026-06-10 20:42:17,256 INFO 127.0.0.1 - - [10/Jun/2026 20:42:17] "[33mGET /brickwise/clear_chat HTTP/1.1[0m" 404 -
+2026-06-10 20:44:40,852 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-10 20:44:40,908 INFO 127.0.0.1 - - [10/Jun/2026 20:44:40] "POST /chats HTTP/1.1" 200 -
+2026-06-15 12:15:41,994 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-15 12:15:41,995 INFO [33mPress CTRL+C to quit[0m
+2026-06-15 12:15:46,566 INFO 127.0.0.1 - - [15/Jun/2026 12:15:46] "GET / HTTP/1.1" 200 -
+2026-06-15 12:15:46,678 INFO 127.0.0.1 - - [15/Jun/2026 12:15:46] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+2026-06-15 12:15:47,586 INFO 127.0.0.1 - - [15/Jun/2026 12:15:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-15 12:15:54,731 INFO 127.0.0.1 - - [15/Jun/2026 12:15:54] "GET /login HTTP/1.1" 200 -
+2026-06-15 12:15:54,772 INFO 127.0.0.1 - - [15/Jun/2026 12:15:54] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2026-06-15 12:16:00,646 INFO 127.0.0.1 - - [15/Jun/2026 12:16:00] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-15 12:16:00,738 INFO 127.0.0.1 - - [15/Jun/2026 12:16:00] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 12:16:00,807 INFO 127.0.0.1 - - [15/Jun/2026 12:16:00] "GET /static/style.css HTTP/1.1" 200 -
+2026-06-15 12:16:00,832 INFO 127.0.0.1 - - [15/Jun/2026 12:16:00] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 12:17:25,883 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 12:17:25,896 INFO 127.0.0.1 - - [15/Jun/2026 12:17:25] "POST /chats HTTP/1.1" 200 -
+2026-06-15 12:17:35,796 INFO 127.0.0.1 - - [15/Jun/2026 12:17:35] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 12:17:35,842 INFO 127.0.0.1 - - [15/Jun/2026 12:17:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 12:17:35,845 INFO 127.0.0.1 - - [15/Jun/2026 12:17:35] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 12:18:03,747 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 12:18:03,764 INFO 127.0.0.1 - - [15/Jun/2026 12:18:03] "POST /chats HTTP/1.1" 200 -
+2026-06-15 12:19:11,627 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 12:19:11,682 INFO 127.0.0.1 - - [15/Jun/2026 12:19:11] "POST /chats HTTP/1.1" 200 -
+2026-06-15 12:19:57,158 INFO 127.0.0.1 - - [15/Jun/2026 12:19:57] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 12:19:57,196 INFO 127.0.0.1 - - [15/Jun/2026 12:19:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 12:19:57,198 INFO 127.0.0.1 - - [15/Jun/2026 12:19:57] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 12:22:29,383 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 12:22:29,403 INFO 127.0.0.1 - - [15/Jun/2026 12:22:29] "POST /chats HTTP/1.1" 200 -
+2026-06-15 12:23:47,014 INFO 127.0.0.1 - - [15/Jun/2026 12:23:47] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 12:23:47,063 INFO 127.0.0.1 - - [15/Jun/2026 12:23:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 12:23:47,065 INFO 127.0.0.1 - - [15/Jun/2026 12:23:47] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 12:24:23,190 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 12:24:23,250 INFO 127.0.0.1 - - [15/Jun/2026 12:24:23] "POST /chats HTTP/1.1" 200 -
+2026-06-15 12:51:18,434 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-15 12:51:18,434 INFO [33mPress CTRL+C to quit[0m
+2026-06-15 12:51:24,104 INFO 127.0.0.1 - - [15/Jun/2026 12:51:24] "GET / HTTP/1.1" 200 -
+2026-06-15 12:51:24,226 INFO 127.0.0.1 - - [15/Jun/2026 12:51:24] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+2026-06-15 12:51:26,478 INFO 127.0.0.1 - - [15/Jun/2026 12:51:26] "GET /login HTTP/1.1" 200 -
+2026-06-15 12:51:26,515 INFO 127.0.0.1 - - [15/Jun/2026 12:51:26] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2026-06-15 12:51:30,893 INFO 127.0.0.1 - - [15/Jun/2026 12:51:30] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-15 12:51:30,935 INFO 127.0.0.1 - - [15/Jun/2026 12:51:30] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 12:51:30,992 INFO 127.0.0.1 - - [15/Jun/2026 12:51:30] "GET /static/style.css HTTP/1.1" 200 -
+2026-06-15 12:51:30,993 INFO 127.0.0.1 - - [15/Jun/2026 12:51:30] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 12:52:14,346 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 12:52:14,364 INFO 127.0.0.1 - - [15/Jun/2026 12:52:14] "POST /chats HTTP/1.1" 200 -
+2026-06-15 21:38:28,735 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-15 21:38:28,736 INFO [33mPress CTRL+C to quit[0m
+2026-06-15 21:52:07,127 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-15 21:52:07,127 INFO [33mPress CTRL+C to quit[0m
+2026-06-15 21:52:10,697 INFO 127.0.0.1 - - [15/Jun/2026 21:52:10] "GET / HTTP/1.1" 200 -
+2026-06-15 21:52:10,768 INFO 127.0.0.1 - - [15/Jun/2026 21:52:10] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+2026-06-15 21:52:10,919 INFO 127.0.0.1 - - [15/Jun/2026 21:52:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-15 21:52:12,321 INFO 127.0.0.1 - - [15/Jun/2026 21:52:12] "GET /login HTTP/1.1" 200 -
+2026-06-15 21:52:12,339 INFO 127.0.0.1 - - [15/Jun/2026 21:52:12] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2026-06-15 21:52:17,802 INFO 127.0.0.1 - - [15/Jun/2026 21:52:17] "POST /login HTTP/1.1" 200 -
+2026-06-15 21:52:17,823 INFO 127.0.0.1 - - [15/Jun/2026 21:52:17] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2026-06-15 21:52:24,331 INFO 127.0.0.1 - - [15/Jun/2026 21:52:24] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-15 21:52:24,362 INFO 127.0.0.1 - - [15/Jun/2026 21:52:24] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 21:52:24,390 INFO 127.0.0.1 - - [15/Jun/2026 21:52:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 21:52:24,404 INFO 127.0.0.1 - - [15/Jun/2026 21:52:24] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 21:52:26,546 INFO 127.0.0.1 - - [15/Jun/2026 21:52:26] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 21:52:26,561 INFO 127.0.0.1 - - [15/Jun/2026 21:52:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 21:52:26,562 INFO 127.0.0.1 - - [15/Jun/2026 21:52:26] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 21:52:37,462 INFO 127.0.0.1 - - [15/Jun/2026 21:52:37] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 21:52:37,478 INFO 127.0.0.1 - - [15/Jun/2026 21:52:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 21:52:37,478 INFO 127.0.0.1 - - [15/Jun/2026 21:52:37] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 21:53:30,567 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 21:53:30,579 INFO 127.0.0.1 - - [15/Jun/2026 21:53:30] "POST /chats HTTP/1.1" 200 -
+2026-06-15 21:55:31,073 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 21:55:31,085 INFO 127.0.0.1 - - [15/Jun/2026 21:55:31] "POST /chats HTTP/1.1" 200 -
+2026-06-15 21:55:50,158 INFO 127.0.0.1 - - [15/Jun/2026 21:55:50] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 21:55:50,176 INFO 127.0.0.1 - - [15/Jun/2026 21:55:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 21:55:50,177 INFO 127.0.0.1 - - [15/Jun/2026 21:55:50] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 21:56:25,735 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 21:56:25,746 INFO 127.0.0.1 - - [15/Jun/2026 21:56:25] "POST /chats HTTP/1.1" 200 -
+2026-06-15 21:57:39,269 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-15 21:57:39,269 INFO [33mPress CTRL+C to quit[0m
+2026-06-15 21:57:42,843 INFO 127.0.0.1 - - [15/Jun/2026 21:57:42] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 21:57:42,860 INFO 127.0.0.1 - - [15/Jun/2026 21:57:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 21:57:42,861 INFO 127.0.0.1 - - [15/Jun/2026 21:57:42] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 21:57:43,347 INFO 127.0.0.1 - - [15/Jun/2026 21:57:43] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 21:57:43,363 INFO 127.0.0.1 - - [15/Jun/2026 21:57:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 21:57:43,363 INFO 127.0.0.1 - - [15/Jun/2026 21:57:43] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 21:57:43,627 INFO 127.0.0.1 - - [15/Jun/2026 21:57:43] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 21:57:43,643 INFO 127.0.0.1 - - [15/Jun/2026 21:57:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 21:57:43,644 INFO 127.0.0.1 - - [15/Jun/2026 21:57:43] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 21:57:43,787 INFO 127.0.0.1 - - [15/Jun/2026 21:57:43] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 21:57:43,800 INFO 127.0.0.1 - - [15/Jun/2026 21:57:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 21:57:43,801 INFO 127.0.0.1 - - [15/Jun/2026 21:57:43] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 21:59:21,047 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 21:59:21,057 INFO 127.0.0.1 - - [15/Jun/2026 21:59:21] "POST /chats HTTP/1.1" 200 -
+2026-06-15 21:59:28,756 INFO 127.0.0.1 - - [15/Jun/2026 21:59:28] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 21:59:28,775 INFO 127.0.0.1 - - [15/Jun/2026 21:59:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 21:59:28,776 INFO 127.0.0.1 - - [15/Jun/2026 21:59:28] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 22:00:05,552 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 22:00:05,577 INFO 127.0.0.1 - - [15/Jun/2026 22:00:05] "POST /chats HTTP/1.1" 200 -
+2026-06-15 22:18:53,336 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-15 22:18:53,336 INFO [33mPress CTRL+C to quit[0m
+2026-06-15 22:18:58,259 INFO 127.0.0.1 - - [15/Jun/2026 22:18:58] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 22:18:58,275 INFO 127.0.0.1 - - [15/Jun/2026 22:18:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 22:18:58,275 INFO 127.0.0.1 - - [15/Jun/2026 22:18:58] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 22:19:40,782 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 22:19:40,797 INFO 127.0.0.1 - - [15/Jun/2026 22:19:40] "POST /chats HTTP/1.1" 200 -
+2026-06-15 22:25:07,456 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-15 22:25:07,456 INFO [33mPress CTRL+C to quit[0m
+2026-06-15 22:25:18,510 INFO 127.0.0.1 - - [15/Jun/2026 22:25:18] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 22:25:18,539 INFO 127.0.0.1 - - [15/Jun/2026 22:25:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 22:25:18,540 INFO 127.0.0.1 - - [15/Jun/2026 22:25:18] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 22:26:01,546 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 22:26:01,561 INFO 127.0.0.1 - - [15/Jun/2026 22:26:01] "POST /chats HTTP/1.1" 200 -
+2026-06-15 22:33:11,108 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-15 22:33:11,108 INFO [33mPress CTRL+C to quit[0m
+2026-06-15 22:33:40,057 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 22:33:40,071 INFO 127.0.0.1 - - [15/Jun/2026 22:33:40] "POST /chats HTTP/1.1" 200 -
+2026-06-15 22:52:06,914 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-15 22:52:06,914 INFO [33mPress CTRL+C to quit[0m
+2026-06-15 22:52:10,414 INFO 127.0.0.1 - - [15/Jun/2026 22:52:10] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 22:52:10,459 INFO 127.0.0.1 - - [15/Jun/2026 22:52:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 22:52:10,462 INFO 127.0.0.1 - - [15/Jun/2026 22:52:10] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 22:52:11,082 INFO 127.0.0.1 - - [15/Jun/2026 22:52:11] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 22:52:11,111 INFO 127.0.0.1 - - [15/Jun/2026 22:52:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 22:52:11,112 INFO 127.0.0.1 - - [15/Jun/2026 22:52:11] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 22:52:11,234 INFO 127.0.0.1 - - [15/Jun/2026 22:52:11] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 22:52:11,261 INFO 127.0.0.1 - - [15/Jun/2026 22:52:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 22:52:11,265 INFO 127.0.0.1 - - [15/Jun/2026 22:52:11] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 22:52:11,411 INFO 127.0.0.1 - - [15/Jun/2026 22:52:11] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 22:52:11,439 INFO 127.0.0.1 - - [15/Jun/2026 22:52:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 22:52:11,440 INFO 127.0.0.1 - - [15/Jun/2026 22:52:11] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 22:52:11,559 INFO 127.0.0.1 - - [15/Jun/2026 22:52:11] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 22:52:11,582 INFO 127.0.0.1 - - [15/Jun/2026 22:52:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 22:52:11,586 INFO 127.0.0.1 - - [15/Jun/2026 22:52:11] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 22:52:45,294 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 22:52:45,316 INFO 127.0.0.1 - - [15/Jun/2026 22:52:45] "POST /chats HTTP/1.1" 200 -
+2026-06-15 22:52:53,823 INFO 127.0.0.1 - - [15/Jun/2026 22:52:53] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 22:52:53,850 INFO 127.0.0.1 - - [15/Jun/2026 22:52:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 22:52:53,855 INFO 127.0.0.1 - - [15/Jun/2026 22:52:53] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 22:54:11,091 INFO 127.0.0.1 - - [15/Jun/2026 22:54:11] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 22:54:11,142 INFO 127.0.0.1 - - [15/Jun/2026 22:54:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 22:54:11,146 INFO 127.0.0.1 - - [15/Jun/2026 22:54:11] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 22:54:49,597 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 22:54:49,620 INFO 127.0.0.1 - - [15/Jun/2026 22:54:49] "POST /chats HTTP/1.1" 200 -
+2026-06-15 22:55:55,935 INFO 127.0.0.1 - - [15/Jun/2026 22:55:55] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 22:55:55,990 INFO 127.0.0.1 - - [15/Jun/2026 22:55:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 22:55:55,992 INFO 127.0.0.1 - - [15/Jun/2026 22:55:55] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 22:56:44,767 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 22:56:44,787 INFO 127.0.0.1 - - [15/Jun/2026 22:56:44] "POST /chats HTTP/1.1" 200 -
+2026-06-15 22:56:56,132 INFO 127.0.0.1 - - [15/Jun/2026 22:56:56] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 22:56:56,203 INFO 127.0.0.1 - - [15/Jun/2026 22:56:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 22:56:56,206 INFO 127.0.0.1 - - [15/Jun/2026 22:56:56] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 22:56:58,309 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 22:56:58,331 INFO 127.0.0.1 - - [15/Jun/2026 22:56:58] "POST /chats HTTP/1.1" 200 -
+2026-06-15 22:57:42,814 INFO 127.0.0.1 - - [15/Jun/2026 22:57:42] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 22:57:42,839 INFO 127.0.0.1 - - [15/Jun/2026 22:57:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 22:57:42,842 INFO 127.0.0.1 - - [15/Jun/2026 22:57:42] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 22:57:42,972 INFO 127.0.0.1 - - [15/Jun/2026 22:57:42] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 22:57:43,000 INFO 127.0.0.1 - - [15/Jun/2026 22:57:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 22:57:43,001 INFO 127.0.0.1 - - [15/Jun/2026 22:57:43] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 22:57:43,274 INFO 127.0.0.1 - - [15/Jun/2026 22:57:43] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 22:57:43,299 INFO 127.0.0.1 - - [15/Jun/2026 22:57:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 22:57:43,301 INFO 127.0.0.1 - - [15/Jun/2026 22:57:43] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 22:58:01,296 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 22:58:01,312 INFO 127.0.0.1 - - [15/Jun/2026 22:58:01] "POST /chats HTTP/1.1" 200 -
+2026-06-15 22:58:46,658 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 22:58:46,680 INFO 127.0.0.1 - - [15/Jun/2026 22:58:46] "POST /chats HTTP/1.1" 200 -
+2026-06-15 22:59:45,363 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 22:59:45,381 INFO 127.0.0.1 - - [15/Jun/2026 22:59:45] "POST /chats HTTP/1.1" 200 -
+2026-06-15 22:59:51,416 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-15 22:59:51,416 INFO [33mPress CTRL+C to quit[0m
+2026-06-15 23:07:08,791 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-15 23:07:08,791 INFO [33mPress CTRL+C to quit[0m
+2026-06-15 23:07:10,799 INFO 127.0.0.1 - - [15/Jun/2026 23:07:10] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 23:07:10,839 INFO 127.0.0.1 - - [15/Jun/2026 23:07:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 23:07:10,841 INFO 127.0.0.1 - - [15/Jun/2026 23:07:10] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 23:07:24,489 INFO 127.0.0.1 - - [15/Jun/2026 23:07:24] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 23:07:24,534 INFO 127.0.0.1 - - [15/Jun/2026 23:07:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 23:07:24,536 INFO 127.0.0.1 - - [15/Jun/2026 23:07:24] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 23:07:40,136 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 23:07:40,151 INFO 127.0.0.1 - - [15/Jun/2026 23:07:40] "POST /chats HTTP/1.1" 200 -
+2026-06-15 23:07:58,558 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 23:07:58,574 INFO 127.0.0.1 - - [15/Jun/2026 23:07:58] "POST /chats HTTP/1.1" 200 -
+2026-06-15 23:23:20,654 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-15 23:23:20,654 INFO [33mPress CTRL+C to quit[0m
+2026-06-15 23:23:23,065 INFO 127.0.0.1 - - [15/Jun/2026 23:23:23] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 23:23:23,096 INFO 127.0.0.1 - - [15/Jun/2026 23:23:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 23:23:23,117 INFO 127.0.0.1 - - [15/Jun/2026 23:23:23] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 23:24:04,271 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 23:24:04,312 INFO 127.0.0.1 - - [15/Jun/2026 23:24:04] "POST /chats HTTP/1.1" 200 -
+2026-06-15 23:32:43,046 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-15 23:32:43,046 INFO [33mPress CTRL+C to quit[0m
+2026-06-15 23:32:46,884 INFO 127.0.0.1 - - [15/Jun/2026 23:32:46] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 23:32:46,921 INFO 127.0.0.1 - - [15/Jun/2026 23:32:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 23:32:46,926 INFO 127.0.0.1 - - [15/Jun/2026 23:32:46] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 23:32:47,470 INFO 127.0.0.1 - - [15/Jun/2026 23:32:47] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 23:32:47,498 INFO 127.0.0.1 - - [15/Jun/2026 23:32:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 23:32:47,499 INFO 127.0.0.1 - - [15/Jun/2026 23:32:47] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 23:32:47,625 INFO 127.0.0.1 - - [15/Jun/2026 23:32:47] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 23:32:47,651 INFO 127.0.0.1 - - [15/Jun/2026 23:32:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 23:32:47,652 INFO 127.0.0.1 - - [15/Jun/2026 23:32:47] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 23:32:47,790 INFO 127.0.0.1 - - [15/Jun/2026 23:32:47] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 23:32:47,818 INFO 127.0.0.1 - - [15/Jun/2026 23:32:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 23:32:47,820 INFO 127.0.0.1 - - [15/Jun/2026 23:32:47] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 23:34:08,022 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 23:34:08,081 INFO 127.0.0.1 - - [15/Jun/2026 23:34:08] "POST /chats HTTP/1.1" 200 -
+2026-06-15 23:34:43,438 INFO 127.0.0.1 - - [15/Jun/2026 23:34:43] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 23:34:43,473 INFO 127.0.0.1 - - [15/Jun/2026 23:34:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 23:34:43,474 INFO 127.0.0.1 - - [15/Jun/2026 23:34:43] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 23:35:03,407 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 23:35:03,464 INFO 127.0.0.1 - - [15/Jun/2026 23:35:03] "POST /chats HTTP/1.1" 200 -
+2026-06-15 23:35:09,797 INFO 127.0.0.1 - - [15/Jun/2026 23:35:09] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 23:35:09,829 INFO 127.0.0.1 - - [15/Jun/2026 23:35:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 23:35:09,830 INFO 127.0.0.1 - - [15/Jun/2026 23:35:09] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 23:35:10,032 INFO 127.0.0.1 - - [15/Jun/2026 23:35:10] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 23:35:10,062 INFO 127.0.0.1 - - [15/Jun/2026 23:35:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 23:35:10,063 INFO 127.0.0.1 - - [15/Jun/2026 23:35:10] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 23:35:39,402 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 23:35:39,459 INFO 127.0.0.1 - - [15/Jun/2026 23:35:39] "POST /chats HTTP/1.1" 200 -
+2026-06-15 23:37:14,788 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 23:37:14,817 INFO 127.0.0.1 - - [15/Jun/2026 23:37:14] "POST /chats HTTP/1.1" 200 -
+2026-06-15 23:39:20,718 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 23:39:20,737 INFO 127.0.0.1 - - [15/Jun/2026 23:39:20] "POST /chats HTTP/1.1" 200 -
+2026-06-15 23:39:47,325 INFO 127.0.0.1 - - [15/Jun/2026 23:39:47] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 23:39:47,358 INFO 127.0.0.1 - - [15/Jun/2026 23:39:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 23:39:47,421 INFO 127.0.0.1 - - [15/Jun/2026 23:39:47] "GET /static/script.js HTTP/1.1" 200 -
+2026-06-15 23:40:19,214 INFO 127.0.0.1 - - [15/Jun/2026 23:40:19] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 23:40:19,249 INFO 127.0.0.1 - - [15/Jun/2026 23:40:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 23:40:19,310 INFO 127.0.0.1 - - [15/Jun/2026 23:40:19] "GET /static/script.js HTTP/1.1" 200 -
+2026-06-15 23:40:19,373 INFO 127.0.0.1 - - [15/Jun/2026 23:40:19] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 23:40:19,402 INFO 127.0.0.1 - - [15/Jun/2026 23:40:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 23:40:19,403 INFO 127.0.0.1 - - [15/Jun/2026 23:40:19] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 23:40:19,675 INFO 127.0.0.1 - - [15/Jun/2026 23:40:19] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 23:40:19,709 INFO 127.0.0.1 - - [15/Jun/2026 23:40:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 23:40:19,710 INFO 127.0.0.1 - - [15/Jun/2026 23:40:19] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 23:40:19,820 INFO 127.0.0.1 - - [15/Jun/2026 23:40:19] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 23:40:19,852 INFO 127.0.0.1 - - [15/Jun/2026 23:40:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 23:40:19,854 INFO 127.0.0.1 - - [15/Jun/2026 23:40:19] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 23:40:30,461 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-15 23:40:30,462 INFO [33mPress CTRL+C to quit[0m
+2026-06-15 23:40:35,767 INFO 127.0.0.1 - - [15/Jun/2026 23:40:35] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 23:40:35,800 INFO 127.0.0.1 - - [15/Jun/2026 23:40:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 23:40:35,801 INFO 127.0.0.1 - - [15/Jun/2026 23:40:35] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 23:40:35,956 INFO 127.0.0.1 - - [15/Jun/2026 23:40:35] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 23:40:35,986 INFO 127.0.0.1 - - [15/Jun/2026 23:40:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 23:40:35,987 INFO 127.0.0.1 - - [15/Jun/2026 23:40:35] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 23:40:36,135 INFO 127.0.0.1 - - [15/Jun/2026 23:40:36] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 23:40:36,169 INFO 127.0.0.1 - - [15/Jun/2026 23:40:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 23:40:36,170 INFO 127.0.0.1 - - [15/Jun/2026 23:40:36] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 23:41:16,378 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 23:41:16,435 INFO 127.0.0.1 - - [15/Jun/2026 23:41:16] "POST /chats HTTP/1.1" 200 -
+2026-06-15 23:45:25,084 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 23:45:25,143 INFO 127.0.0.1 - - [15/Jun/2026 23:45:25] "POST /chats HTTP/1.1" 200 -
+2026-06-15 23:47:25,334 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 23:47:25,392 INFO 127.0.0.1 - - [15/Jun/2026 23:47:25] "POST /chats HTTP/1.1" 200 -
+2026-06-15 23:47:36,133 INFO 127.0.0.1 - - [15/Jun/2026 23:47:36] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 23:47:36,191 INFO 127.0.0.1 - - [15/Jun/2026 23:47:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 23:47:36,192 INFO 127.0.0.1 - - [15/Jun/2026 23:47:36] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 23:47:59,410 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 23:47:59,458 INFO 127.0.0.1 - - [15/Jun/2026 23:47:59] "POST /chats HTTP/1.1" 200 -
+2026-06-15 23:49:43,597 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 23:49:43,654 INFO 127.0.0.1 - - [15/Jun/2026 23:49:43] "POST /chats HTTP/1.1" 200 -
+2026-06-15 23:49:54,068 INFO 127.0.0.1 - - [15/Jun/2026 23:49:54] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 23:49:54,102 INFO 127.0.0.1 - - [15/Jun/2026 23:49:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 23:49:54,103 INFO 127.0.0.1 - - [15/Jun/2026 23:49:54] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 23:50:19,769 INFO 127.0.0.1 - - [15/Jun/2026 23:50:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 23:50:19,905 INFO 127.0.0.1 - - [15/Jun/2026 23:50:19] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2026-06-15 23:50:24,677 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 23:50:24,734 INFO 127.0.0.1 - - [15/Jun/2026 23:50:24] "POST /chats HTTP/1.1" 200 -
+2026-06-15 23:54:06,566 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-15 23:54:06,566 INFO [33mPress CTRL+C to quit[0m
+2026-06-15 23:54:09,150 INFO 127.0.0.1 - - [15/Jun/2026 23:54:09] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 23:54:09,182 INFO 127.0.0.1 - - [15/Jun/2026 23:54:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 23:54:09,184 INFO 127.0.0.1 - - [15/Jun/2026 23:54:09] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 23:54:09,319 INFO 127.0.0.1 - - [15/Jun/2026 23:54:09] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 23:54:09,352 INFO 127.0.0.1 - - [15/Jun/2026 23:54:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 23:54:09,353 INFO 127.0.0.1 - - [15/Jun/2026 23:54:09] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 23:54:09,470 INFO 127.0.0.1 - - [15/Jun/2026 23:54:09] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 23:54:09,503 INFO 127.0.0.1 - - [15/Jun/2026 23:54:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 23:54:09,504 INFO 127.0.0.1 - - [15/Jun/2026 23:54:09] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-15 23:54:42,229 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 23:54:42,285 INFO 127.0.0.1 - - [15/Jun/2026 23:54:42] "POST /chats HTTP/1.1" 200 -
+2026-06-15 23:55:34,780 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-15 23:55:34,837 INFO 127.0.0.1 - - [15/Jun/2026 23:55:34] "POST /chats HTTP/1.1" 200 -
+2026-06-15 23:59:52,642 INFO 127.0.0.1 - - [15/Jun/2026 23:59:52] "GET /brickwise HTTP/1.1" 200 -
+2026-06-15 23:59:52,675 INFO 127.0.0.1 - - [15/Jun/2026 23:59:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-15 23:59:52,676 INFO 127.0.0.1 - - [15/Jun/2026 23:59:52] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 00:01:10,474 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-16 00:01:10,532 INFO 127.0.0.1 - - [16/Jun/2026 00:01:10] "POST /chats HTTP/1.1" 200 -
+2026-06-16 00:01:29,430 INFO 127.0.0.1 - - [16/Jun/2026 00:01:29] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 00:01:29,463 INFO 127.0.0.1 - - [16/Jun/2026 00:01:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 00:01:29,464 INFO 127.0.0.1 - - [16/Jun/2026 00:01:29] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 00:02:52,914 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-16 00:02:52,970 INFO 127.0.0.1 - - [16/Jun/2026 00:02:52] "POST /chats HTTP/1.1" 200 -
+2026-06-16 00:03:21,827 INFO 127.0.0.1 - - [16/Jun/2026 00:03:21] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 00:03:21,859 INFO 127.0.0.1 - - [16/Jun/2026 00:03:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 00:03:21,860 INFO 127.0.0.1 - - [16/Jun/2026 00:03:21] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 00:03:56,928 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-16 00:03:56,989 INFO 127.0.0.1 - - [16/Jun/2026 00:03:56] "POST /chats HTTP/1.1" 200 -
+2026-06-16 00:04:20,471 INFO 127.0.0.1 - - [16/Jun/2026 00:04:20] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 00:04:20,508 INFO 127.0.0.1 - - [16/Jun/2026 00:04:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 00:04:20,509 INFO 127.0.0.1 - - [16/Jun/2026 00:04:20] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 00:04:54,948 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-16 00:04:54,961 INFO 127.0.0.1 - - [16/Jun/2026 00:04:54] "POST /chats HTTP/1.1" 200 -
+2026-06-16 00:08:20,521 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-16 00:08:20,521 INFO [33mPress CTRL+C to quit[0m
+2026-06-16 00:08:23,859 INFO 127.0.0.1 - - [16/Jun/2026 00:08:23] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 00:08:23,894 INFO 127.0.0.1 - - [16/Jun/2026 00:08:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 00:08:23,895 INFO 127.0.0.1 - - [16/Jun/2026 00:08:23] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 00:08:42,259 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-16 00:08:42,316 INFO 127.0.0.1 - - [16/Jun/2026 00:08:42] "POST /chats HTTP/1.1" 200 -
+2026-06-16 00:12:02,702 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-16 00:12:02,702 INFO [33mPress CTRL+C to quit[0m
+2026-06-16 00:12:43,105 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-16 00:12:43,117 INFO 127.0.0.1 - - [16/Jun/2026 00:12:43] "POST /chats HTTP/1.1" 200 -
+2026-06-16 00:13:34,910 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-16 00:13:34,928 INFO 127.0.0.1 - - [16/Jun/2026 00:13:34] "POST /chats HTTP/1.1" 200 -
+2026-06-16 00:14:01,448 INFO 127.0.0.1 - - [16/Jun/2026 00:14:01] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 00:14:01,480 INFO 127.0.0.1 - - [16/Jun/2026 00:14:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 00:14:01,481 INFO 127.0.0.1 - - [16/Jun/2026 00:14:01] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 00:14:28,105 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-16 00:14:28,118 INFO 127.0.0.1 - - [16/Jun/2026 00:14:28] "POST /chats HTTP/1.1" 200 -
+2026-06-16 00:14:57,447 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-16 00:14:57,503 INFO 127.0.0.1 - - [16/Jun/2026 00:14:57] "POST /chats HTTP/1.1" 200 -
+2026-06-16 10:03:50,796 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-16 10:03:50,797 INFO [33mPress CTRL+C to quit[0m
+2026-06-16 10:03:57,044 INFO 127.0.0.1 - - [16/Jun/2026 10:03:57] "GET / HTTP/1.1" 200 -
+2026-06-16 10:03:57,144 INFO 127.0.0.1 - - [16/Jun/2026 10:03:57] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+2026-06-16 10:03:57,334 INFO 127.0.0.1 - - [16/Jun/2026 10:03:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-16 10:03:59,463 INFO 127.0.0.1 - - [16/Jun/2026 10:03:59] "GET /login HTTP/1.1" 200 -
+2026-06-16 10:03:59,503 INFO 127.0.0.1 - - [16/Jun/2026 10:03:59] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2026-06-16 10:04:06,443 INFO 127.0.0.1 - - [16/Jun/2026 10:04:06] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-16 10:04:06,517 INFO 127.0.0.1 - - [16/Jun/2026 10:04:06] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:04:06,553 INFO 127.0.0.1 - - [16/Jun/2026 10:04:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:04:06,554 INFO 127.0.0.1 - - [16/Jun/2026 10:04:06] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:04:12,046 INFO 127.0.0.1 - - [16/Jun/2026 10:04:12] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:04:12,077 INFO 127.0.0.1 - - [16/Jun/2026 10:04:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:04:12,077 INFO 127.0.0.1 - - [16/Jun/2026 10:04:12] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:04:17,703 INFO 127.0.0.1 - - [16/Jun/2026 10:04:17] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:04:17,735 INFO 127.0.0.1 - - [16/Jun/2026 10:04:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:04:17,736 INFO 127.0.0.1 - - [16/Jun/2026 10:04:17] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:04:18,157 INFO 127.0.0.1 - - [16/Jun/2026 10:04:18] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:04:18,191 INFO 127.0.0.1 - - [16/Jun/2026 10:04:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:04:18,192 INFO 127.0.0.1 - - [16/Jun/2026 10:04:18] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:04:18,371 INFO 127.0.0.1 - - [16/Jun/2026 10:04:18] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:04:18,401 INFO 127.0.0.1 - - [16/Jun/2026 10:04:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:04:18,402 INFO 127.0.0.1 - - [16/Jun/2026 10:04:18] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:04:50,023 INFO 127.0.0.1 - - [16/Jun/2026 10:04:50] "GET / HTTP/1.1" 200 -
+2026-06-16 10:04:50,063 INFO 127.0.0.1 - - [16/Jun/2026 10:04:50] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+2026-06-16 10:04:50,559 INFO 127.0.0.1 - - [16/Jun/2026 10:04:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-16 10:04:52,331 INFO 127.0.0.1 - - [16/Jun/2026 10:04:52] "GET /login HTTP/1.1" 200 -
+2026-06-16 10:04:52,364 INFO 127.0.0.1 - - [16/Jun/2026 10:04:52] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2026-06-16 10:04:59,239 INFO 127.0.0.1 - - [16/Jun/2026 10:04:59] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-16 10:04:59,259 INFO 127.0.0.1 - - [16/Jun/2026 10:04:59] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:04:59,302 INFO 127.0.0.1 - - [16/Jun/2026 10:04:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:04:59,303 INFO 127.0.0.1 - - [16/Jun/2026 10:04:59] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:09:49,201 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-16 10:09:49,201 INFO [33mPress CTRL+C to quit[0m
+2026-06-16 10:09:52,340 INFO 127.0.0.1 - - [16/Jun/2026 10:09:52] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:09:52,480 INFO 127.0.0.1 - - [16/Jun/2026 10:09:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:09:52,488 INFO 127.0.0.1 - - [16/Jun/2026 10:09:52] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:09:54,677 INFO 127.0.0.1 - - [16/Jun/2026 10:09:54] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:09:54,721 INFO 127.0.0.1 - - [16/Jun/2026 10:09:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:09:54,722 INFO 127.0.0.1 - - [16/Jun/2026 10:09:54] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:09:55,121 INFO 127.0.0.1 - - [16/Jun/2026 10:09:55] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:09:55,159 INFO 127.0.0.1 - - [16/Jun/2026 10:09:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:09:55,160 INFO 127.0.0.1 - - [16/Jun/2026 10:09:55] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:10:00,492 INFO 127.0.0.1 - - [16/Jun/2026 10:10:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:10:00,554 INFO 127.0.0.1 - - [16/Jun/2026 10:10:00] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2026-06-16 10:12:50,561 INFO 127.0.0.1 - - [16/Jun/2026 10:12:50] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:12:50,596 INFO 127.0.0.1 - - [16/Jun/2026 10:12:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:12:50,600 INFO 127.0.0.1 - - [16/Jun/2026 10:12:50] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:12:51,012 INFO 127.0.0.1 - - [16/Jun/2026 10:12:51] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:12:51,048 INFO 127.0.0.1 - - [16/Jun/2026 10:12:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:12:51,050 INFO 127.0.0.1 - - [16/Jun/2026 10:12:51] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:12:51,365 INFO 127.0.0.1 - - [16/Jun/2026 10:12:51] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:12:51,405 INFO 127.0.0.1 - - [16/Jun/2026 10:12:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:12:51,406 INFO 127.0.0.1 - - [16/Jun/2026 10:12:51] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:12:59,382 INFO 127.0.0.1 - - [16/Jun/2026 10:12:59] "[32mGET /clear_chat HTTP/1.1[0m" 302 -
+2026-06-16 10:12:59,392 INFO 127.0.0.1 - - [16/Jun/2026 10:12:59] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:12:59,441 INFO 127.0.0.1 - - [16/Jun/2026 10:12:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:12:59,442 INFO 127.0.0.1 - - [16/Jun/2026 10:12:59] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:13:02,498 ERROR Exception on /chats [POST]
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table memory has no column named memory_type
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 92, in wrapped_view
+    return view(**kwargs)
+  File "D:\codes\Flask\app.py", line 304, in chat
+    save_memory(username,"chat",user_message)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 113, in save_memory
+    db.session.commit()
+    ~~~~~~~~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 597, in commit
+    return self._proxied.commit()
+           ~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2034, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1315, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1290, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4352, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4487, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4448, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 465, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1234, in _emit_insert_statements
+    result = connection.execute(
+        statement,
+        params,
+        execution_options=execution_options,
+    )
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) table memory has no column named memory_type
+[SQL: INSERT INTO memory (username, memory_type, content, created_at) VALUES (?, ?, ?, ?)]
+[parameters: ('rhytham10', 'chat', 'hi', '2026-06-16 04:43:02.497370')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-16 10:13:02,643 INFO 127.0.0.1 - - [16/Jun/2026 10:13:02] "[35m[1mPOST /chats HTTP/1.1[0m" 500 -
+2026-06-16 10:13:09,775 INFO 127.0.0.1 - - [16/Jun/2026 10:13:09] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:13:09,811 INFO 127.0.0.1 - - [16/Jun/2026 10:13:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:13:09,816 INFO 127.0.0.1 - - [16/Jun/2026 10:13:09] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:13:09,913 INFO 127.0.0.1 - - [16/Jun/2026 10:13:09] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:13:09,945 INFO 127.0.0.1 - - [16/Jun/2026 10:13:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:13:09,946 INFO 127.0.0.1 - - [16/Jun/2026 10:13:09] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:13:10,328 INFO 127.0.0.1 - - [16/Jun/2026 10:13:10] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:13:10,363 INFO 127.0.0.1 - - [16/Jun/2026 10:13:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:13:10,364 INFO 127.0.0.1 - - [16/Jun/2026 10:13:10] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:13:10,470 INFO 127.0.0.1 - - [16/Jun/2026 10:13:10] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:13:10,501 INFO 127.0.0.1 - - [16/Jun/2026 10:13:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:13:10,502 INFO 127.0.0.1 - - [16/Jun/2026 10:13:10] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:13:10,694 INFO 127.0.0.1 - - [16/Jun/2026 10:13:10] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:13:10,725 INFO 127.0.0.1 - - [16/Jun/2026 10:13:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:13:10,726 INFO 127.0.0.1 - - [16/Jun/2026 10:13:10] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:13:16,595 INFO 127.0.0.1 - - [16/Jun/2026 10:13:16] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:13:16,627 INFO 127.0.0.1 - - [16/Jun/2026 10:13:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:13:16,636 INFO 127.0.0.1 - - [16/Jun/2026 10:13:16] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:13:46,234 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-16 10:13:46,234 INFO [33mPress CTRL+C to quit[0m
+2026-06-16 10:13:48,942 INFO 127.0.0.1 - - [16/Jun/2026 10:13:48] "GET / HTTP/1.1" 200 -
+2026-06-16 10:13:49,038 INFO 127.0.0.1 - - [16/Jun/2026 10:13:49] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+2026-06-16 10:13:51,766 INFO 127.0.0.1 - - [16/Jun/2026 10:13:51] "GET /login HTTP/1.1" 200 -
+2026-06-16 10:13:51,799 INFO 127.0.0.1 - - [16/Jun/2026 10:13:51] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2026-06-16 10:13:57,545 INFO 127.0.0.1 - - [16/Jun/2026 10:13:57] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-16 10:13:57,553 ERROR Exception on /brickwise [GET]
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2288, in _entity_namespace_key
+    return getattr(ns, key)  # type: ignore
+AttributeError: type object 'ChatMessage' has no attribute 'username'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 201, in wrapped_view
+    return view(**kwargs);
+  File "D:\codes\Flask\app.py", line 368, in brickwise
+    recent_messages = load_chat(session['user'])
+  File "D:\codes\Flask\app.py", line 207, in load_chat
+    chats = ChatMessage.query.filter_by(username=username).order_by(ChatMessage.timestamp).all()
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1993, in filter_by
+    _entity_namespace_key(from_entity, key) == value
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2290, in _entity_namespace_key
+    raise exc.InvalidRequestError(
+        'Entity namespace for "%s" has no property "%s"' % (entity, key)
+    ) from err
+sqlalchemy.exc.InvalidRequestError: Entity namespace for "chat_message" has no property "username"
+2026-06-16 10:13:57,568 INFO 127.0.0.1 - - [16/Jun/2026 10:13:57] "[35m[1mGET /brickwise HTTP/1.1[0m" 500 -
+2026-06-16 10:14:07,675 ERROR Exception on /brickwise [GET]
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2288, in _entity_namespace_key
+    return getattr(ns, key)  # type: ignore
+AttributeError: type object 'ChatMessage' has no attribute 'username'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 201, in wrapped_view
+    return view(**kwargs);
+  File "D:\codes\Flask\app.py", line 368, in brickwise
+    recent_messages = load_chat(session['user'])
+  File "D:\codes\Flask\app.py", line 207, in load_chat
+    chats = ChatMessage.query.filter_by(username=username).order_by(ChatMessage.timestamp).all()
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1993, in filter_by
+    _entity_namespace_key(from_entity, key) == value
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2290, in _entity_namespace_key
+    raise exc.InvalidRequestError(
+        'Entity namespace for "%s" has no property "%s"' % (entity, key)
+    ) from err
+sqlalchemy.exc.InvalidRequestError: Entity namespace for "chat_message" has no property "username"
+2026-06-16 10:14:07,678 INFO 127.0.0.1 - - [16/Jun/2026 10:14:07] "[35m[1mGET /brickwise HTTP/1.1[0m" 500 -
+2026-06-16 10:14:07,825 ERROR Exception on /brickwise [GET]
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2288, in _entity_namespace_key
+    return getattr(ns, key)  # type: ignore
+AttributeError: type object 'ChatMessage' has no attribute 'username'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 201, in wrapped_view
+    return view(**kwargs);
+  File "D:\codes\Flask\app.py", line 368, in brickwise
+    recent_messages = load_chat(session['user'])
+  File "D:\codes\Flask\app.py", line 207, in load_chat
+    chats = ChatMessage.query.filter_by(username=username).order_by(ChatMessage.timestamp).all()
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1993, in filter_by
+    _entity_namespace_key(from_entity, key) == value
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2290, in _entity_namespace_key
+    raise exc.InvalidRequestError(
+        'Entity namespace for "%s" has no property "%s"' % (entity, key)
+    ) from err
+sqlalchemy.exc.InvalidRequestError: Entity namespace for "chat_message" has no property "username"
+2026-06-16 10:14:07,829 INFO 127.0.0.1 - - [16/Jun/2026 10:14:07] "[35m[1mGET /brickwise HTTP/1.1[0m" 500 -
+2026-06-16 10:14:08,108 ERROR Exception on /brickwise [GET]
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2288, in _entity_namespace_key
+    return getattr(ns, key)  # type: ignore
+AttributeError: type object 'ChatMessage' has no attribute 'username'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 201, in wrapped_view
+    return view(**kwargs);
+  File "D:\codes\Flask\app.py", line 368, in brickwise
+    recent_messages = load_chat(session['user'])
+  File "D:\codes\Flask\app.py", line 207, in load_chat
+    chats = ChatMessage.query.filter_by(username=username).order_by(ChatMessage.timestamp).all()
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1993, in filter_by
+    _entity_namespace_key(from_entity, key) == value
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2290, in _entity_namespace_key
+    raise exc.InvalidRequestError(
+        'Entity namespace for "%s" has no property "%s"' % (entity, key)
+    ) from err
+sqlalchemy.exc.InvalidRequestError: Entity namespace for "chat_message" has no property "username"
+2026-06-16 10:14:08,113 INFO 127.0.0.1 - - [16/Jun/2026 10:14:08] "[35m[1mGET /brickwise HTTP/1.1[0m" 500 -
+2026-06-16 10:14:16,395 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-16 10:14:16,395 INFO [33mPress CTRL+C to quit[0m
+2026-06-16 10:14:18,615 ERROR Exception on /brickwise [GET]
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2288, in _entity_namespace_key
+    return getattr(ns, key)  # type: ignore
+AttributeError: type object 'ChatMessage' has no attribute 'username'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 201, in wrapped_view
+    return view(**kwargs);
+  File "D:\codes\Flask\app.py", line 368, in brickwise
+    recent_messages = load_chat(session['user'])
+  File "D:\codes\Flask\app.py", line 207, in load_chat
+    chats = ChatMessage.query.filter_by(username=username).order_by(ChatMessage.timestamp).all()
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1993, in filter_by
+    _entity_namespace_key(from_entity, key) == value
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2290, in _entity_namespace_key
+    raise exc.InvalidRequestError(
+        'Entity namespace for "%s" has no property "%s"' % (entity, key)
+    ) from err
+sqlalchemy.exc.InvalidRequestError: Entity namespace for "chat_message" has no property "username"
+2026-06-16 10:14:18,627 INFO 127.0.0.1 - - [16/Jun/2026 10:14:18] "[35m[1mGET /brickwise HTTP/1.1[0m" 500 -
+2026-06-16 10:14:19,332 ERROR Exception on /brickwise [GET]
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2288, in _entity_namespace_key
+    return getattr(ns, key)  # type: ignore
+AttributeError: type object 'ChatMessage' has no attribute 'username'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 201, in wrapped_view
+    return view(**kwargs);
+  File "D:\codes\Flask\app.py", line 368, in brickwise
+    recent_messages = load_chat(session['user'])
+  File "D:\codes\Flask\app.py", line 207, in load_chat
+    chats = ChatMessage.query.filter_by(username=username).order_by(ChatMessage.timestamp).all()
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1993, in filter_by
+    _entity_namespace_key(from_entity, key) == value
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2290, in _entity_namespace_key
+    raise exc.InvalidRequestError(
+        'Entity namespace for "%s" has no property "%s"' % (entity, key)
+    ) from err
+sqlalchemy.exc.InvalidRequestError: Entity namespace for "chat_message" has no property "username"
+2026-06-16 10:14:19,337 INFO 127.0.0.1 - - [16/Jun/2026 10:14:19] "[35m[1mGET /brickwise HTTP/1.1[0m" 500 -
+2026-06-16 10:14:19,466 ERROR Exception on /brickwise [GET]
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2288, in _entity_namespace_key
+    return getattr(ns, key)  # type: ignore
+AttributeError: type object 'ChatMessage' has no attribute 'username'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 201, in wrapped_view
+    return view(**kwargs);
+  File "D:\codes\Flask\app.py", line 368, in brickwise
+    recent_messages = load_chat(session['user'])
+  File "D:\codes\Flask\app.py", line 207, in load_chat
+    chats = ChatMessage.query.filter_by(username=username).order_by(ChatMessage.timestamp).all()
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1993, in filter_by
+    _entity_namespace_key(from_entity, key) == value
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2290, in _entity_namespace_key
+    raise exc.InvalidRequestError(
+        'Entity namespace for "%s" has no property "%s"' % (entity, key)
+    ) from err
+sqlalchemy.exc.InvalidRequestError: Entity namespace for "chat_message" has no property "username"
+2026-06-16 10:14:19,470 INFO 127.0.0.1 - - [16/Jun/2026 10:14:19] "[35m[1mGET /brickwise HTTP/1.1[0m" 500 -
+2026-06-16 10:14:19,748 ERROR Exception on /brickwise [GET]
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2288, in _entity_namespace_key
+    return getattr(ns, key)  # type: ignore
+AttributeError: type object 'ChatMessage' has no attribute 'username'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 201, in wrapped_view
+    return view(**kwargs);
+  File "D:\codes\Flask\app.py", line 368, in brickwise
+    recent_messages = load_chat(session['user'])
+  File "D:\codes\Flask\app.py", line 207, in load_chat
+    chats = ChatMessage.query.filter_by(username=username).order_by(ChatMessage.timestamp).all()
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1993, in filter_by
+    _entity_namespace_key(from_entity, key) == value
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2290, in _entity_namespace_key
+    raise exc.InvalidRequestError(
+        'Entity namespace for "%s" has no property "%s"' % (entity, key)
+    ) from err
+sqlalchemy.exc.InvalidRequestError: Entity namespace for "chat_message" has no property "username"
+2026-06-16 10:14:19,751 INFO 127.0.0.1 - - [16/Jun/2026 10:14:19] "[35m[1mGET /brickwise HTTP/1.1[0m" 500 -
+2026-06-16 10:14:20,018 ERROR Exception on /brickwise [GET]
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2288, in _entity_namespace_key
+    return getattr(ns, key)  # type: ignore
+AttributeError: type object 'ChatMessage' has no attribute 'username'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 201, in wrapped_view
+    return view(**kwargs);
+  File "D:\codes\Flask\app.py", line 368, in brickwise
+    recent_messages = load_chat(session['user'])
+  File "D:\codes\Flask\app.py", line 207, in load_chat
+    chats = ChatMessage.query.filter_by(username=username).order_by(ChatMessage.timestamp).all()
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1993, in filter_by
+    _entity_namespace_key(from_entity, key) == value
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2290, in _entity_namespace_key
+    raise exc.InvalidRequestError(
+        'Entity namespace for "%s" has no property "%s"' % (entity, key)
+    ) from err
+sqlalchemy.exc.InvalidRequestError: Entity namespace for "chat_message" has no property "username"
+2026-06-16 10:14:20,023 INFO 127.0.0.1 - - [16/Jun/2026 10:14:20] "[35m[1mGET /brickwise HTTP/1.1[0m" 500 -
+2026-06-16 10:14:20,144 ERROR Exception on /brickwise [GET]
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2288, in _entity_namespace_key
+    return getattr(ns, key)  # type: ignore
+AttributeError: type object 'ChatMessage' has no attribute 'username'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 201, in wrapped_view
+    return view(**kwargs);
+  File "D:\codes\Flask\app.py", line 368, in brickwise
+    recent_messages = load_chat(session['user'])
+  File "D:\codes\Flask\app.py", line 207, in load_chat
+    chats = ChatMessage.query.filter_by(username=username).order_by(ChatMessage.timestamp).all()
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1993, in filter_by
+    _entity_namespace_key(from_entity, key) == value
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2290, in _entity_namespace_key
+    raise exc.InvalidRequestError(
+        'Entity namespace for "%s" has no property "%s"' % (entity, key)
+    ) from err
+sqlalchemy.exc.InvalidRequestError: Entity namespace for "chat_message" has no property "username"
+2026-06-16 10:14:20,149 INFO 127.0.0.1 - - [16/Jun/2026 10:14:20] "[35m[1mGET /brickwise HTTP/1.1[0m" 500 -
+2026-06-16 10:14:20,286 ERROR Exception on /brickwise [GET]
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2288, in _entity_namespace_key
+    return getattr(ns, key)  # type: ignore
+AttributeError: type object 'ChatMessage' has no attribute 'username'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 201, in wrapped_view
+    return view(**kwargs);
+  File "D:\codes\Flask\app.py", line 368, in brickwise
+    recent_messages = load_chat(session['user'])
+  File "D:\codes\Flask\app.py", line 207, in load_chat
+    chats = ChatMessage.query.filter_by(username=username).order_by(ChatMessage.timestamp).all()
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1993, in filter_by
+    _entity_namespace_key(from_entity, key) == value
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2290, in _entity_namespace_key
+    raise exc.InvalidRequestError(
+        'Entity namespace for "%s" has no property "%s"' % (entity, key)
+    ) from err
+sqlalchemy.exc.InvalidRequestError: Entity namespace for "chat_message" has no property "username"
+2026-06-16 10:14:20,290 INFO 127.0.0.1 - - [16/Jun/2026 10:14:20] "[35m[1mGET /brickwise HTTP/1.1[0m" 500 -
+2026-06-16 10:14:20,420 ERROR Exception on /brickwise [GET]
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2288, in _entity_namespace_key
+    return getattr(ns, key)  # type: ignore
+AttributeError: type object 'ChatMessage' has no attribute 'username'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 201, in wrapped_view
+    return view(**kwargs);
+  File "D:\codes\Flask\app.py", line 368, in brickwise
+    recent_messages = load_chat(session['user'])
+  File "D:\codes\Flask\app.py", line 207, in load_chat
+    chats = ChatMessage.query.filter_by(username=username).order_by(ChatMessage.timestamp).all()
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1993, in filter_by
+    _entity_namespace_key(from_entity, key) == value
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2290, in _entity_namespace_key
+    raise exc.InvalidRequestError(
+        'Entity namespace for "%s" has no property "%s"' % (entity, key)
+    ) from err
+sqlalchemy.exc.InvalidRequestError: Entity namespace for "chat_message" has no property "username"
+2026-06-16 10:14:20,424 INFO 127.0.0.1 - - [16/Jun/2026 10:14:20] "[35m[1mGET /brickwise HTTP/1.1[0m" 500 -
+2026-06-16 10:14:20,571 ERROR Exception on /brickwise [GET]
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2288, in _entity_namespace_key
+    return getattr(ns, key)  # type: ignore
+AttributeError: type object 'ChatMessage' has no attribute 'username'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 201, in wrapped_view
+    return view(**kwargs);
+  File "D:\codes\Flask\app.py", line 368, in brickwise
+    recent_messages = load_chat(session['user'])
+  File "D:\codes\Flask\app.py", line 207, in load_chat
+    chats = ChatMessage.query.filter_by(username=username).order_by(ChatMessage.timestamp).all()
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1993, in filter_by
+    _entity_namespace_key(from_entity, key) == value
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2290, in _entity_namespace_key
+    raise exc.InvalidRequestError(
+        'Entity namespace for "%s" has no property "%s"' % (entity, key)
+    ) from err
+sqlalchemy.exc.InvalidRequestError: Entity namespace for "chat_message" has no property "username"
+2026-06-16 10:14:20,575 INFO 127.0.0.1 - - [16/Jun/2026 10:14:20] "[35m[1mGET /brickwise HTTP/1.1[0m" 500 -
+2026-06-16 10:14:20,700 ERROR Exception on /brickwise [GET]
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2288, in _entity_namespace_key
+    return getattr(ns, key)  # type: ignore
+AttributeError: type object 'ChatMessage' has no attribute 'username'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 201, in wrapped_view
+    return view(**kwargs);
+  File "D:\codes\Flask\app.py", line 368, in brickwise
+    recent_messages = load_chat(session['user'])
+  File "D:\codes\Flask\app.py", line 207, in load_chat
+    chats = ChatMessage.query.filter_by(username=username).order_by(ChatMessage.timestamp).all()
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1993, in filter_by
+    _entity_namespace_key(from_entity, key) == value
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2290, in _entity_namespace_key
+    raise exc.InvalidRequestError(
+        'Entity namespace for "%s" has no property "%s"' % (entity, key)
+    ) from err
+sqlalchemy.exc.InvalidRequestError: Entity namespace for "chat_message" has no property "username"
+2026-06-16 10:14:20,704 INFO 127.0.0.1 - - [16/Jun/2026 10:14:20] "[35m[1mGET /brickwise HTTP/1.1[0m" 500 -
+2026-06-16 10:14:21,236 ERROR Exception on /brickwise [GET]
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2288, in _entity_namespace_key
+    return getattr(ns, key)  # type: ignore
+AttributeError: type object 'ChatMessage' has no attribute 'username'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 201, in wrapped_view
+    return view(**kwargs);
+  File "D:\codes\Flask\app.py", line 368, in brickwise
+    recent_messages = load_chat(session['user'])
+  File "D:\codes\Flask\app.py", line 207, in load_chat
+    chats = ChatMessage.query.filter_by(username=username).order_by(ChatMessage.timestamp).all()
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1993, in filter_by
+    _entity_namespace_key(from_entity, key) == value
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2290, in _entity_namespace_key
+    raise exc.InvalidRequestError(
+        'Entity namespace for "%s" has no property "%s"' % (entity, key)
+    ) from err
+sqlalchemy.exc.InvalidRequestError: Entity namespace for "chat_message" has no property "username"
+2026-06-16 10:14:21,241 INFO 127.0.0.1 - - [16/Jun/2026 10:14:21] "[35m[1mGET /brickwise HTTP/1.1[0m" 500 -
+2026-06-16 10:14:35,838 ERROR Exception on /brickwise [GET]
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2288, in _entity_namespace_key
+    return getattr(ns, key)  # type: ignore
+AttributeError: type object 'ChatMessage' has no attribute 'username'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 201, in wrapped_view
+    flash('Username already taken.','error')
+       ^^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 368, in brickwise
+    if ocr_context:
+              ^^^^^
+  File "D:\codes\Flask\app.py", line 207, in load_chat
+    db.session.commit()    #commit save database changes permanently
+        ~~~~~~~~~~~~~^^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1993, in filter_by
+    _entity_namespace_key(from_entity, key) == value
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2290, in _entity_namespace_key
+    raise exc.InvalidRequestError(
+        'Entity namespace for "%s" has no property "%s"' % (entity, key)
+    ) from err
+sqlalchemy.exc.InvalidRequestError: Entity namespace for "chat_message" has no property "username"
+2026-06-16 10:14:35,870 INFO 127.0.0.1 - - [16/Jun/2026 10:14:35] "[35m[1mGET /brickwise HTTP/1.1[0m" 500 -
+2026-06-16 10:14:42,837 ERROR Exception on /brickwise [GET]
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2288, in _entity_namespace_key
+    return getattr(ns, key)  # type: ignore
+AttributeError: type object 'ChatMessage' has no attribute 'username'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 201, in wrapped_view
+    flash('Username already taken.','error')
+       ^^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 368, in brickwise
+    if ocr_context:
+              ^^^^^
+  File "D:\codes\Flask\app.py", line 207, in load_chat
+    db.session.commit()    #commit save database changes permanently
+        ~~~~~~~~~~~~~^^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1993, in filter_by
+    _entity_namespace_key(from_entity, key) == value
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2290, in _entity_namespace_key
+    raise exc.InvalidRequestError(
+        'Entity namespace for "%s" has no property "%s"' % (entity, key)
+    ) from err
+sqlalchemy.exc.InvalidRequestError: Entity namespace for "chat_message" has no property "username"
+2026-06-16 10:14:42,843 INFO 127.0.0.1 - - [16/Jun/2026 10:14:42] "[35m[1mGET /brickwise HTTP/1.1[0m" 500 -
+2026-06-16 10:14:43,011 ERROR Exception on /brickwise [GET]
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2288, in _entity_namespace_key
+    return getattr(ns, key)  # type: ignore
+AttributeError: type object 'ChatMessage' has no attribute 'username'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 201, in wrapped_view
+    flash('Username already taken.','error')
+       ^^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 368, in brickwise
+    if ocr_context:
+              ^^^^^
+  File "D:\codes\Flask\app.py", line 207, in load_chat
+    db.session.commit()    #commit save database changes permanently
+        ~~~~~~~~~~~~~^^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1993, in filter_by
+    _entity_namespace_key(from_entity, key) == value
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2290, in _entity_namespace_key
+    raise exc.InvalidRequestError(
+        'Entity namespace for "%s" has no property "%s"' % (entity, key)
+    ) from err
+sqlalchemy.exc.InvalidRequestError: Entity namespace for "chat_message" has no property "username"
+2026-06-16 10:14:43,015 INFO 127.0.0.1 - - [16/Jun/2026 10:14:43] "[35m[1mGET /brickwise HTTP/1.1[0m" 500 -
+2026-06-16 10:14:43,133 ERROR Exception on /brickwise [GET]
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2288, in _entity_namespace_key
+    return getattr(ns, key)  # type: ignore
+AttributeError: type object 'ChatMessage' has no attribute 'username'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 201, in wrapped_view
+    flash('Username already taken.','error')
+       ^^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 368, in brickwise
+    if ocr_context:
+              ^^^^^
+  File "D:\codes\Flask\app.py", line 207, in load_chat
+    db.session.commit()    #commit save database changes permanently
+        ~~~~~~~~~~~~~^^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1993, in filter_by
+    _entity_namespace_key(from_entity, key) == value
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2290, in _entity_namespace_key
+    raise exc.InvalidRequestError(
+        'Entity namespace for "%s" has no property "%s"' % (entity, key)
+    ) from err
+sqlalchemy.exc.InvalidRequestError: Entity namespace for "chat_message" has no property "username"
+2026-06-16 10:14:43,137 INFO 127.0.0.1 - - [16/Jun/2026 10:14:43] "[35m[1mGET /brickwise HTTP/1.1[0m" 500 -
+2026-06-16 10:14:43,273 ERROR Exception on /brickwise [GET]
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2288, in _entity_namespace_key
+    return getattr(ns, key)  # type: ignore
+AttributeError: type object 'ChatMessage' has no attribute 'username'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 201, in wrapped_view
+    flash('Username already taken.','error')
+       ^^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 368, in brickwise
+    if ocr_context:
+              ^^^^^
+  File "D:\codes\Flask\app.py", line 207, in load_chat
+    db.session.commit()    #commit save database changes permanently
+        ~~~~~~~~~~~~~^^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1993, in filter_by
+    _entity_namespace_key(from_entity, key) == value
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2290, in _entity_namespace_key
+    raise exc.InvalidRequestError(
+        'Entity namespace for "%s" has no property "%s"' % (entity, key)
+    ) from err
+sqlalchemy.exc.InvalidRequestError: Entity namespace for "chat_message" has no property "username"
+2026-06-16 10:14:43,279 INFO 127.0.0.1 - - [16/Jun/2026 10:14:43] "[35m[1mGET /brickwise HTTP/1.1[0m" 500 -
+2026-06-16 10:14:43,498 ERROR Exception on /brickwise [GET]
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2288, in _entity_namespace_key
+    return getattr(ns, key)  # type: ignore
+AttributeError: type object 'ChatMessage' has no attribute 'username'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 201, in wrapped_view
+    flash('Username already taken.','error')
+       ^^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 368, in brickwise
+    if ocr_context:
+              ^^^^^
+  File "D:\codes\Flask\app.py", line 207, in load_chat
+    db.session.commit()    #commit save database changes permanently
+        ~~~~~~~~~~~~~^^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1993, in filter_by
+    _entity_namespace_key(from_entity, key) == value
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\base.py", line 2290, in _entity_namespace_key
+    raise exc.InvalidRequestError(
+        'Entity namespace for "%s" has no property "%s"' % (entity, key)
+    ) from err
+sqlalchemy.exc.InvalidRequestError: Entity namespace for "chat_message" has no property "username"
+2026-06-16 10:14:43,504 INFO 127.0.0.1 - - [16/Jun/2026 10:14:43] "[35m[1mGET /brickwise HTTP/1.1[0m" 500 -
+2026-06-16 10:14:54,280 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-16 10:14:54,281 INFO [33mPress CTRL+C to quit[0m
+2026-06-16 10:14:57,441 INFO 127.0.0.1 - - [16/Jun/2026 10:14:57] "GET / HTTP/1.1" 200 -
+2026-06-16 10:14:57,527 INFO 127.0.0.1 - - [16/Jun/2026 10:14:57] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+2026-06-16 10:14:59,823 INFO 127.0.0.1 - - [16/Jun/2026 10:14:59] "GET /login HTTP/1.1" 200 -
+2026-06-16 10:14:59,857 INFO 127.0.0.1 - - [16/Jun/2026 10:14:59] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2026-06-16 10:15:09,404 INFO 127.0.0.1 - - [16/Jun/2026 10:15:09] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-16 10:15:09,438 INFO 127.0.0.1 - - [16/Jun/2026 10:15:09] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:15:09,478 INFO 127.0.0.1 - - [16/Jun/2026 10:15:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:15:09,480 INFO 127.0.0.1 - - [16/Jun/2026 10:15:09] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:16:34,549 INFO 127.0.0.1 - - [16/Jun/2026 10:16:34] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:16:34,587 INFO 127.0.0.1 - - [16/Jun/2026 10:16:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:16:34,589 INFO 127.0.0.1 - - [16/Jun/2026 10:16:34] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:16:34,702 INFO 127.0.0.1 - - [16/Jun/2026 10:16:34] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:16:34,739 INFO 127.0.0.1 - - [16/Jun/2026 10:16:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:16:34,740 INFO 127.0.0.1 - - [16/Jun/2026 10:16:34] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:16:34,848 INFO 127.0.0.1 - - [16/Jun/2026 10:16:34] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:16:34,879 INFO 127.0.0.1 - - [16/Jun/2026 10:16:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:16:34,880 INFO 127.0.0.1 - - [16/Jun/2026 10:16:34] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:16:35,015 INFO 127.0.0.1 - - [16/Jun/2026 10:16:35] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:16:35,047 INFO 127.0.0.1 - - [16/Jun/2026 10:16:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:16:35,048 INFO 127.0.0.1 - - [16/Jun/2026 10:16:35] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:16:35,167 INFO 127.0.0.1 - - [16/Jun/2026 10:16:35] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:16:35,189 INFO 127.0.0.1 - - [16/Jun/2026 10:16:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:16:35,194 INFO 127.0.0.1 - - [16/Jun/2026 10:16:35] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:16:35,387 INFO 127.0.0.1 - - [16/Jun/2026 10:16:35] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:16:35,414 INFO 127.0.0.1 - - [16/Jun/2026 10:16:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:16:35,415 INFO 127.0.0.1 - - [16/Jun/2026 10:16:35] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:16:37,507 ERROR Exception on /chats [POST]
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table memory has no column named memory_type
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 92, in wrapped_view
+    return view(**kwargs)
+  File "D:\codes\Flask\app.py", line 304, in chat
+    save_memory(username,"chat",user_message)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 113, in save_memory
+    db.session.commit()
+    ~~~~~~~~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 597, in commit
+    return self._proxied.commit()
+           ~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2034, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1315, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1290, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4352, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4487, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4448, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 465, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1234, in _emit_insert_statements
+    result = connection.execute(
+        statement,
+        params,
+        execution_options=execution_options,
+    )
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) table memory has no column named memory_type
+[SQL: INSERT INTO memory (username, memory_type, content, created_at) VALUES (?, ?, ?, ?)]
+[parameters: ('rhytham10', 'chat', 'hi', '2026-06-16 04:46:37.506070')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-16 10:16:37,526 INFO 127.0.0.1 - - [16/Jun/2026 10:16:37] "[35m[1mPOST /chats HTTP/1.1[0m" 500 -
+2026-06-16 10:16:45,164 INFO 127.0.0.1 - - [16/Jun/2026 10:16:45] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:16:45,209 INFO 127.0.0.1 - - [16/Jun/2026 10:16:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:16:45,210 INFO 127.0.0.1 - - [16/Jun/2026 10:16:45] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:20:20,187 INFO 127.0.0.1 - - [16/Jun/2026 10:20:20] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:20:20,219 INFO 127.0.0.1 - - [16/Jun/2026 10:20:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:20:20,221 INFO 127.0.0.1 - - [16/Jun/2026 10:20:20] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:20:20,338 INFO 127.0.0.1 - - [16/Jun/2026 10:20:20] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:20:20,373 INFO 127.0.0.1 - - [16/Jun/2026 10:20:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:20:20,374 INFO 127.0.0.1 - - [16/Jun/2026 10:20:20] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:20:20,622 INFO 127.0.0.1 - - [16/Jun/2026 10:20:20] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:20:20,651 INFO 127.0.0.1 - - [16/Jun/2026 10:20:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:20:20,652 INFO 127.0.0.1 - - [16/Jun/2026 10:20:20] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:20:20,767 INFO 127.0.0.1 - - [16/Jun/2026 10:20:20] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:20:20,800 INFO 127.0.0.1 - - [16/Jun/2026 10:20:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:20:20,801 INFO 127.0.0.1 - - [16/Jun/2026 10:20:20] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:20:20,984 INFO 127.0.0.1 - - [16/Jun/2026 10:20:20] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:20:21,017 INFO 127.0.0.1 - - [16/Jun/2026 10:20:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:20:21,018 INFO 127.0.0.1 - - [16/Jun/2026 10:20:21] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:21:53,632 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-16 10:21:53,632 INFO [33mPress CTRL+C to quit[0m
+2026-06-16 10:21:57,088 INFO 127.0.0.1 - - [16/Jun/2026 10:21:57] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:21:57,236 INFO 127.0.0.1 - - [16/Jun/2026 10:21:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:21:57,275 INFO 127.0.0.1 - - [16/Jun/2026 10:21:57] "GET /static/script.js HTTP/1.1" 200 -
+2026-06-16 10:21:58,246 INFO 127.0.0.1 - - [16/Jun/2026 10:21:58] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:21:58,276 INFO 127.0.0.1 - - [16/Jun/2026 10:21:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:21:58,277 INFO 127.0.0.1 - - [16/Jun/2026 10:21:58] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:21:58,801 INFO 127.0.0.1 - - [16/Jun/2026 10:21:58] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:21:58,833 INFO 127.0.0.1 - - [16/Jun/2026 10:21:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:21:58,834 INFO 127.0.0.1 - - [16/Jun/2026 10:21:58] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:21:59,016 INFO 127.0.0.1 - - [16/Jun/2026 10:21:59] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:21:59,043 INFO 127.0.0.1 - - [16/Jun/2026 10:21:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:21:59,046 INFO 127.0.0.1 - - [16/Jun/2026 10:21:59] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:22:07,302 INFO 127.0.0.1 - - [16/Jun/2026 10:22:07] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:22:07,333 INFO 127.0.0.1 - - [16/Jun/2026 10:22:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:22:07,335 INFO 127.0.0.1 - - [16/Jun/2026 10:22:07] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:22:07,526 INFO 127.0.0.1 - - [16/Jun/2026 10:22:07] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:22:07,558 INFO 127.0.0.1 - - [16/Jun/2026 10:22:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:22:07,559 INFO 127.0.0.1 - - [16/Jun/2026 10:22:07] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:22:07,903 INFO 127.0.0.1 - - [16/Jun/2026 10:22:07] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:22:07,932 INFO 127.0.0.1 - - [16/Jun/2026 10:22:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:22:07,933 INFO 127.0.0.1 - - [16/Jun/2026 10:22:07] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:22:08,162 INFO 127.0.0.1 - - [16/Jun/2026 10:22:08] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:22:08,193 INFO 127.0.0.1 - - [16/Jun/2026 10:22:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:22:08,194 INFO 127.0.0.1 - - [16/Jun/2026 10:22:08] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:22:08,307 INFO 127.0.0.1 - - [16/Jun/2026 10:22:08] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:22:08,340 INFO 127.0.0.1 - - [16/Jun/2026 10:22:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:22:08,341 INFO 127.0.0.1 - - [16/Jun/2026 10:22:08] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:22:08,522 INFO 127.0.0.1 - - [16/Jun/2026 10:22:08] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:22:08,554 INFO 127.0.0.1 - - [16/Jun/2026 10:22:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:22:08,556 INFO 127.0.0.1 - - [16/Jun/2026 10:22:08] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:23:06,684 INFO 127.0.0.1 - - [16/Jun/2026 10:23:06] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:23:06,719 INFO 127.0.0.1 - - [16/Jun/2026 10:23:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:23:06,723 INFO 127.0.0.1 - - [16/Jun/2026 10:23:06] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:23:06,800 INFO 127.0.0.1 - - [16/Jun/2026 10:23:06] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:23:06,830 INFO 127.0.0.1 - - [16/Jun/2026 10:23:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:23:06,831 INFO 127.0.0.1 - - [16/Jun/2026 10:23:06] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:23:07,099 INFO 127.0.0.1 - - [16/Jun/2026 10:23:07] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:23:07,134 INFO 127.0.0.1 - - [16/Jun/2026 10:23:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:23:07,135 INFO 127.0.0.1 - - [16/Jun/2026 10:23:07] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:23:07,217 INFO 127.0.0.1 - - [16/Jun/2026 10:23:07] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:23:07,249 INFO 127.0.0.1 - - [16/Jun/2026 10:23:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:23:07,250 INFO 127.0.0.1 - - [16/Jun/2026 10:23:07] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:23:07,968 INFO 127.0.0.1 - - [16/Jun/2026 10:23:07] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:23:07,999 INFO 127.0.0.1 - - [16/Jun/2026 10:23:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:23:08,000 INFO 127.0.0.1 - - [16/Jun/2026 10:23:08] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:23:14,215 INFO 127.0.0.1 - - [16/Jun/2026 10:23:14] "GET /profile HTTP/1.1" 200 -
+2026-06-16 10:23:14,249 INFO 127.0.0.1 - - [16/Jun/2026 10:23:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:23:14,266 INFO 127.0.0.1 - - [16/Jun/2026 10:23:14] "[36mGET /static/profile.css HTTP/1.1[0m" 304 -
+2026-06-16 10:23:15,850 INFO 127.0.0.1 - - [16/Jun/2026 10:23:15] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:23:15,888 INFO 127.0.0.1 - - [16/Jun/2026 10:23:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:23:15,889 INFO 127.0.0.1 - - [16/Jun/2026 10:23:15] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:25:08,641 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-16 10:25:08,642 INFO [33mPress CTRL+C to quit[0m
+2026-06-16 10:25:14,987 INFO 127.0.0.1 - - [16/Jun/2026 10:25:14] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:25:15,121 INFO 127.0.0.1 - - [16/Jun/2026 10:25:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:25:15,123 INFO 127.0.0.1 - - [16/Jun/2026 10:25:15] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:25:17,843 ERROR Exception on /chats [POST]
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table memory has no column named memory_type
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 92, in wrapped_view
+    return view(**kwargs)
+  File "D:\codes\Flask\app.py", line 313, in chat
+    save_memory(username,"chat",user_message)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 113, in save_memory
+    db.session.commit()
+    ~~~~~~~~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 597, in commit
+    return self._proxied.commit()
+           ~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2034, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1315, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1290, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4352, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4487, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4448, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 465, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1234, in _emit_insert_statements
+    result = connection.execute(
+        statement,
+        params,
+        execution_options=execution_options,
+    )
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) table memory has no column named memory_type
+[SQL: INSERT INTO memory (username, memory_type, content, created_at) VALUES (?, ?, ?, ?)]
+[parameters: ('rhytham10', 'chat', 'hi', '2026-06-16 04:55:17.842800')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-16 10:25:17,863 INFO 127.0.0.1 - - [16/Jun/2026 10:25:17] "[35m[1mPOST /chats HTTP/1.1[0m" 500 -
+2026-06-16 10:30:28,925 ERROR Exception on /chats [POST]
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table memory has no column named memory_type
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 92, in wrapped_view
+    return view(**kwargs)
+  File "D:\codes\Flask\app.py", line 313, in chat
+    save_memory(username,"chat",user_message)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 113, in save_memory
+    db.session.commit()
+    ~~~~~~~~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 597, in commit
+    return self._proxied.commit()
+           ~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2034, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1315, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1290, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4352, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4487, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4448, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 465, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1234, in _emit_insert_statements
+    result = connection.execute(
+        statement,
+        params,
+        execution_options=execution_options,
+    )
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) table memory has no column named memory_type
+[SQL: INSERT INTO memory (username, memory_type, content, created_at) VALUES (?, ?, ?, ?)]
+[parameters: ('rhytham10', 'chat', 'hi', '2026-06-16 05:00:28.925006')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-16 10:30:28,937 INFO 127.0.0.1 - - [16/Jun/2026 10:30:28] "[35m[1mPOST /chats HTTP/1.1[0m" 500 -
+2026-06-16 10:30:31,869 ERROR Exception on /chats [POST]
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: memory.memory_type
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 92, in wrapped_view
+    return view(**kwargs)
+  File "D:\codes\Flask\app.py", line 335, in chat
+    memory_context = retrieve_memory(username,user_message)
+  File "D:\codes\Flask\app.py", line 116, in retrieve_memory
+    memories = Memory.query.filter_by(username=username).all()
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2711, in all
+    return self._iter().all()  # type: ignore
+           ~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2864, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+        params,
+        ^^^^^^^
+        execution_options={"_sa_orm_load_options": self.load_options},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2372, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2270, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        conn,
+        ^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+        statement, params or {}, execution_options=execution_options
+    )
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: memory.memory_type
+[SQL: SELECT memory.id AS memory_id, memory.username AS memory_username, memory.memory_type AS memory_memory_type, memory.content AS memory_content, memory.created_at AS memory_created_at 
+FROM memory 
+WHERE memory.username = ?]
+[parameters: ('rhytham10',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-16 10:30:31,908 INFO 127.0.0.1 - - [16/Jun/2026 10:30:31] "[35m[1mPOST /chats HTTP/1.1[0m" 500 -
+2026-06-16 10:33:50,631 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-16 10:33:50,632 INFO [33mPress CTRL+C to quit[0m
+2026-06-16 10:33:52,735 INFO 127.0.0.1 - - [16/Jun/2026 10:33:52] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:33:52,890 INFO 127.0.0.1 - - [16/Jun/2026 10:33:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:33:52,909 INFO 127.0.0.1 - - [16/Jun/2026 10:33:52] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:33:53,063 INFO 127.0.0.1 - - [16/Jun/2026 10:33:53] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:33:53,091 INFO 127.0.0.1 - - [16/Jun/2026 10:33:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:33:53,092 INFO 127.0.0.1 - - [16/Jun/2026 10:33:53] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:33:53,217 INFO 127.0.0.1 - - [16/Jun/2026 10:33:53] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:33:53,245 INFO 127.0.0.1 - - [16/Jun/2026 10:33:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:33:53,246 INFO 127.0.0.1 - - [16/Jun/2026 10:33:53] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:33:57,087 ERROR Exception on /chats [POST]
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table memory has no column named memory_type
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 96, in wrapped_view
+    return view(**kwargs)
+  File "D:\codes\Flask\app.py", line 329, in chat
+    save_memory(username,"chat",user_message)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 117, in save_memory
+    db.session.commit()
+    ~~~~~~~~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 597, in commit
+    return self._proxied.commit()
+           ~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2034, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1315, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1290, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4352, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4487, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4448, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 465, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1234, in _emit_insert_statements
+    result = connection.execute(
+        statement,
+        params,
+        execution_options=execution_options,
+    )
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) table memory has no column named memory_type
+[SQL: INSERT INTO memory (username, memory_type, content, created_at) VALUES (?, ?, ?, ?)]
+[parameters: ('rhytham10', 'chat', 'hi', '2026-06-16 05:03:57.085631')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-16 10:33:57,328 INFO 127.0.0.1 - - [16/Jun/2026 10:33:57] "[35m[1mPOST /chats HTTP/1.1[0m" 500 -
+2026-06-16 10:36:35,998 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-16 10:36:35,999 INFO [33mPress CTRL+C to quit[0m
+2026-06-16 10:36:39,872 ERROR Exception on /chats [POST]
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table memory has no column named memory_type
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 96, in wrapped_view
+    return view(**kwargs)
+  File "D:\codes\Flask\app.py", line 329, in chat
+    save_memory(username,"chat",user_message)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 117, in save_memory
+    db.session.commit()
+    ~~~~~~~~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 597, in commit
+    return self._proxied.commit()
+           ~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2034, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1315, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1290, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4352, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4487, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4448, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 465, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1234, in _emit_insert_statements
+    result = connection.execute(
+        statement,
+        params,
+        execution_options=execution_options,
+    )
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) table memory has no column named memory_type
+[SQL: INSERT INTO memory (username, memory_type, content, created_at) VALUES (?, ?, ?, ?)]
+[parameters: ('rhytham10', 'chat', 'hi', '2026-06-16 05:06:39.870955')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-16 10:36:39,896 INFO 127.0.0.1 - - [16/Jun/2026 10:36:39] "[35m[1mPOST /chats HTTP/1.1[0m" 500 -
+2026-06-16 10:36:44,029 INFO 127.0.0.1 - - [16/Jun/2026 10:36:44] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:36:44,161 INFO 127.0.0.1 - - [16/Jun/2026 10:36:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:36:44,169 INFO 127.0.0.1 - - [16/Jun/2026 10:36:44] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:36:44,340 INFO 127.0.0.1 - - [16/Jun/2026 10:36:44] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:36:44,369 INFO 127.0.0.1 - - [16/Jun/2026 10:36:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:36:44,372 INFO 127.0.0.1 - - [16/Jun/2026 10:36:44] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:36:46,210 ERROR Exception on /chats [POST]
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table memory has no column named memory_type
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\codes\Flask\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 96, in wrapped_view
+    return view(**kwargs)
+  File "D:\codes\Flask\app.py", line 329, in chat
+    save_memory(username,"chat",user_message)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\codes\Flask\app.py", line 117, in save_memory
+    db.session.commit()
+    ~~~~~~~~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 597, in commit
+    return self._proxied.commit()
+           ~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2034, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1315, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1290, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4352, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4487, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4448, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 465, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1234, in _emit_insert_statements
+    result = connection.execute(
+        statement,
+        params,
+        execution_options=execution_options,
+    )
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\codes\Flask\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) table memory has no column named memory_type
+[SQL: INSERT INTO memory (username, memory_type, content, created_at) VALUES (?, ?, ?, ?)]
+[parameters: ('rhytham10', 'chat', 'hi', '2026-06-16 05:06:46.209405')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-16 10:36:46,222 INFO 127.0.0.1 - - [16/Jun/2026 10:36:46] "[35m[1mPOST /chats HTTP/1.1[0m" 500 -
+2026-06-16 10:38:28,959 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-16 10:38:28,959 INFO [33mPress CTRL+C to quit[0m
+2026-06-16 10:38:28,963 INFO  * Restarting with stat
+2026-06-16 10:38:31,378 WARNING  * Debugger is active!
+2026-06-16 10:38:31,411 INFO  * Debugger PIN: 961-656-789
+2026-06-16 10:38:59,241 INFO 127.0.0.1 - - [16/Jun/2026 10:38:59] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:38:59,391 INFO 127.0.0.1 - - [16/Jun/2026 10:38:59] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:38:59,393 INFO 127.0.0.1 - - [16/Jun/2026 10:38:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:39:00,019 INFO 127.0.0.1 - - [16/Jun/2026 10:39:00] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:39:00,067 INFO 127.0.0.1 - - [16/Jun/2026 10:39:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:39:00,069 INFO 127.0.0.1 - - [16/Jun/2026 10:39:00] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:39:00,184 INFO 127.0.0.1 - - [16/Jun/2026 10:39:00] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:39:00,216 INFO 127.0.0.1 - - [16/Jun/2026 10:39:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:39:00,218 INFO 127.0.0.1 - - [16/Jun/2026 10:39:00] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:39:00,357 INFO 127.0.0.1 - - [16/Jun/2026 10:39:00] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:39:00,388 INFO 127.0.0.1 - - [16/Jun/2026 10:39:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:39:00,393 INFO 127.0.0.1 - - [16/Jun/2026 10:39:00] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:39:01,985 INFO 127.0.0.1 - - [16/Jun/2026 10:39:01] "[35m[1mPOST /chats HTTP/1.1[0m" 500 -
+2026-06-16 10:39:02,045 INFO 127.0.0.1 - - [16/Jun/2026 10:39:02] "GET /chats?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2026-06-16 10:39:02,063 INFO 127.0.0.1 - - [16/Jun/2026 10:39:02] "GET /chats?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2026-06-16 10:39:02,129 INFO 127.0.0.1 - - [16/Jun/2026 10:39:02] "GET /chats?__debugger__=yes&cmd=resource&f=console.png&s=bSXGZw7I7zryRMgwo2zr HTTP/1.1" 200 -
+2026-06-16 10:39:02,144 INFO 127.0.0.1 - - [16/Jun/2026 10:39:02] "GET /chats?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2026-06-16 10:40:38,363 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-16 10:40:38,363 INFO [33mPress CTRL+C to quit[0m
+2026-06-16 10:40:38,366 INFO  * Restarting with stat
+2026-06-16 10:40:40,872 WARNING  * Debugger is active!
+2026-06-16 10:40:40,881 INFO  * Debugger PIN: 961-656-789
+2026-06-16 10:40:55,310 INFO 127.0.0.1 - - [16/Jun/2026 10:40:55] "GET / HTTP/1.1" 200 -
+2026-06-16 10:40:55,396 INFO 127.0.0.1 - - [16/Jun/2026 10:40:55] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+2026-06-16 10:40:57,906 INFO 127.0.0.1 - - [16/Jun/2026 10:40:57] "GET /login HTTP/1.1" 200 -
+2026-06-16 10:40:58,001 INFO 127.0.0.1 - - [16/Jun/2026 10:40:58] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2026-06-16 10:41:02,463 INFO 127.0.0.1 - - [16/Jun/2026 10:41:02] "POST /login HTTP/1.1" 200 -
+2026-06-16 10:41:02,498 INFO 127.0.0.1 - - [16/Jun/2026 10:41:02] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2026-06-16 10:41:04,611 INFO 127.0.0.1 - - [16/Jun/2026 10:41:04] "GET /registration HTTP/1.1" 200 -
+2026-06-16 10:41:04,661 INFO 127.0.0.1 - - [16/Jun/2026 10:41:04] "GET /static/registration.css HTTP/1.1" 200 -
+2026-06-16 10:41:21,404 INFO 127.0.0.1 - - [16/Jun/2026 10:41:21] "[32mPOST /registration HTTP/1.1[0m" 302 -
+2026-06-16 10:41:21,412 INFO 127.0.0.1 - - [16/Jun/2026 10:41:21] "GET /login HTTP/1.1" 200 -
+2026-06-16 10:41:21,466 INFO 127.0.0.1 - - [16/Jun/2026 10:41:21] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2026-06-16 10:41:31,834 INFO 127.0.0.1 - - [16/Jun/2026 10:41:31] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-16 10:41:31,865 INFO 127.0.0.1 - - [16/Jun/2026 10:41:31] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:41:31,910 INFO 127.0.0.1 - - [16/Jun/2026 10:41:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:41:31,913 INFO 127.0.0.1 - - [16/Jun/2026 10:41:31] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:41:34,534 INFO 127.0.0.1 - - [16/Jun/2026 10:41:34] "GET /brickwise HTTP/1.1" 200 -
+2026-06-16 10:41:34,578 INFO 127.0.0.1 - - [16/Jun/2026 10:41:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-16 10:41:34,579 INFO 127.0.0.1 - - [16/Jun/2026 10:41:34] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-06-16 10:42:08,846 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-16 10:42:08,863 INFO 127.0.0.1 - - [16/Jun/2026 10:42:08] "[32mPOST /chats HTTP/1.1[0m" 302 -
+2026-06-16 10:43:02,374 INFO  * Detected change in 'D:\\codes\\Flask\\app.py', reloading
+2026-06-16 10:43:02,700 INFO  * Restarting with stat

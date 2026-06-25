@@ -1,0 +1,335 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Inter,system-ui,sans-serif;
+}
+
+body{
+    background:#0c0d11;
+    color:white;
+    overflow:hidden;
+}
+
+.container{
+    display:flex;
+    height:100vh;
+}
+
+/* MAIN CONTENT */
+
+.main-content{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+/* NAVBAR */
+
+.navbar{
+    height:70px;
+    padding:0 30px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+.top-title h2{
+    font-size:22px;
+}
+
+.top-title p{
+    font-size:13px;
+    color:#8e8e8e;
+    margin-top:4px;
+}
+
+.nav-icons{
+    display:flex;
+    gap:12px;
+}
+
+.nav-icons i{
+    width:40px;
+    height:40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#171920;
+    border-radius:10px;
+    cursor:pointer;
+    color:#d8d8d8;
+}
+
+/* CONTENT */
+
+.gmail-container{
+    flex:1;
+    display:flex;
+    overflow:hidden;
+}
+
+/* INBOX */
+
+.email-list{
+    width:330px;
+    background:#111216;
+    border-right:1px solid rgba(255,255,255,.05);
+    overflow-y:auto;
+}
+
+.section-title{
+    padding:20px;
+    font-size:18px;
+    font-weight:600;
+    color:#58ff73;
+}
+
+.email-card{
+    margin:12px;
+    padding:16px;
+    background:#171920;
+    border-radius:16px;
+    cursor:pointer;
+    transition:.25s;
+}
+
+.email-card:hover{
+    background:#21242c;
+}
+
+.email-card h4{
+    font-size:14px;
+    margin-bottom:8px;
+    color:#ffffff;
+}
+
+.email-card p{
+    font-size:13px;
+    color:#bdbdbd;
+}
+
+/* EMAIL VIEW */
+
+.email-view{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    padding:25px;
+    overflow-y:auto;
+}
+
+.email-top{
+    margin-bottom:20px;
+}
+
+.email-top h2{
+    font-size:24px;
+}
+
+.email-body{
+    background:#111216;
+    border-radius:18px;
+    padding:20px;
+    min-height:220px;
+    max-height:350px;
+    overflow-y:auto;
+    line-height:1.8;
+    white-space:pre-wrap;
+    margin-bottom:20px;
+}
+
+/* REPLY BOX */
+
+.reply-box{
+    background:#111216;
+    padding:20px;
+    border-radius:18px;
+    margin-bottom:20px;
+}
+
+.reply-box input,
+.reply-box textarea{
+    width:100%;
+    background:#171920;
+    border:none;
+    outline:none;
+    color:white;
+    border-radius:12px;
+    padding:14px;
+    margin-bottom:12px;
+}
+
+.reply-box textarea{
+    min-height:120px;
+    resize:vertical;
+}
+
+.reply-actions{
+    display:flex;
+    gap:12px;
+}
+
+.reply-actions button{
+    background:#58ff73;
+    border:none;
+    color:#08110b;
+    padding:12px 18px;
+    border-radius:12px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.reply-actions button:hover{
+    opacity:.9;
+}
+
+/* COMPOSE */
+
+.compose-box{
+    background:#111216;
+    padding:20px;
+    border-radius:18px;
+}
+
+.compose-box h3{
+    margin-bottom:15px;
+    color:#58ff73;
+}
+
+.compose-box input,
+.compose-box textarea{
+    width:100%;
+    background:#171920;
+    border:none;
+    outline:none;
+    color:white;
+    border-radius:12px;
+    padding:14px;
+    margin-bottom:12px;
+}
+
+.compose-box textarea{
+    min-height:150px;
+    resize:vertical;
+}
+
+.compose-box button{
+    background:#58ff73;
+    color:#08110b;
+    border:none;
+    padding:12px 18px;
+    border-radius:12px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.compose-box button:hover{
+    opacity:.9;
+}
+
+/* AI PANEL */
+
+.history{
+    width:320px;
+    background:#111216;
+    border-left:1px solid rgba(255,255,255,.05);
+    display:flex;
+    flex-direction:column;
+}
+
+.history-top{
+    padding:20px;
+    border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+.history-top h3{
+    color:#58ff73;
+    margin-bottom:15px;
+}
+
+.analyze-btn{
+    width:100%;
+    border:none;
+    padding:12px;
+    border-radius:12px;
+    background:#58ff73;
+    color:#08110b;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.analyze-btn:hover{
+    opacity:.9;
+}
+
+#analysis{
+    flex:1;
+    padding:20px;
+    overflow-y:auto;
+    line-height:1.8;
+    white-space:pre-wrap;
+    color:#e6e6e6;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#111216;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#2b313b;
+    border-radius:10px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+
+    .history{
+        display:none;
+    }
+
+}
+
+@media(max-width:900px){
+
+    .email-list{
+        width:260px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .email-list{
+        display:none;
+    }
+
+    .email-view{
+        width:100%;
+    }
+
+}
+
+@media(max-width:500px){
+
+    .navbar{
+        padding:0 15px;
+    }
+
+    .email-view{
+        padding:15px;
+    }
+
+    .reply-actions{
+        flex-direction:column;
+    }
+
+}

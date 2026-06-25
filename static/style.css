@@ -276,9 +276,12 @@ body{
   max-width:78%;
   padding:15px 18px;
   border-radius:18px;
-  line-height:1.6;
+  line-height:1.75;
   font-size:14px;
   animation:fadeIn 0.3s ease;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 /* USER */
@@ -299,6 +302,59 @@ body{
   border:1px solid rgba(255,255,255,0.05);
   color:#f5f5f5;
   border-bottom-left-radius:6px;
+}
+
+.bot-message p{
+  margin: 0 0 12px;
+}
+
+.bot-message ul,
+.bot-message ol{
+  margin: 8px 0 12px 1.3rem;
+  padding: 0;
+}
+
+.bot-message ul li,
+.bot-message ol li{
+  margin: 6px 0;
+}
+
+.bot-message strong{
+  font-weight: 700;
+}
+
+.bot-message em{
+  font-style: italic;
+}
+
+.bot-message code{
+  display: inline-block;
+  background: rgba(255,255,255,0.08);
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.bot-heading{
+  display:block;
+  margin-bottom: 12px;
+  padding-left: 24px;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  position: relative;
+}
+
+.bot-heading::before{
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  color: #58ff73;
 }
 
 /* =========================================

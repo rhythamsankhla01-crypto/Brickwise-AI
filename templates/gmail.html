@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gmail Assistant | BrickWise AI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='gmail.css') }}">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+
+</head>
+
+<body>
+
+<div class="container">
+
+    {% include "head.html" %}
+
+    <main class="main-content">
+
+        <nav class="navbar">
+
+            <div class="top-title">
+
+                <h2>Gmail Assistant</h2>
+
+                <p>Read, Analyze and Send Emails with AI</p>
+
+            </div>
+
+            <div class="nav-icons">
+
+                <i
+                    class="fa-solid fa-rotate"
+                    onclick="loadInbox()"
+                ></i>
+
+                <a href="/profile">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+
+            </div>
+
+        </nav>
+
+        <div class="gmail-container">
+
+            <!-- INBOX -->
+
+            <div class="email-list">
+
+                <div class="section-title">
+                    Inbox
+                </div>
+
+            </div>
+
+            <!-- EMAIL VIEW -->
+
+            <div class="email-view">
+
+                <div class="email-top">
+
+                    <h2 id="email-subject">
+                        Select an Email
+                    </h2>
+
+                </div>
+
+                <div
+                    id="email-body"
+                    class="email-body"
+                >
+                    Email content will appear here...
+                </div>
+
+                <!-- AI REPLY -->
+
+                <div class="reply-box">
+
+                    <input
+                        type="text"
+                        id="reply-subject"
+                        placeholder="Reply Subject"
+                    >
+
+                    <textarea
+                        id="reply-body"
+                        placeholder="Write reply..."
+                    ></textarea>
+
+                    <div class="reply-actions">
+
+                        <button
+                            onclick="generateAIReply()"
+                        >
+                            AI Reply
+                        </button>
+
+                        <button
+                            onclick="sendReply()"
+                        >
+                            Send Reply
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- COMPOSE EMAIL -->
+
+                <div class="compose-box">
+
+                    <h3>
+                        Compose Email
+                    </h3>
+
+                    <input
+                        type="email"
+                        id="email-to"
+                        placeholder="Recipient Email"
+                    >
+
+                    <input
+                        type="text"
+                        id="email-compose-subject"
+                        placeholder="Subject"
+                    >
+
+                    <textarea
+                        id="email-compose-body"
+                        placeholder="Write Email..."
+                    ></textarea>
+
+                    <button
+                        onclick="sendNewEmail()"
+                    >
+                        Send Email
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- RIGHT SIDEBAR -->
+
+    <div class="history">
+
+        <div class="history-top">
+
+            <h3>AI Insights</h3>
+
+            <button
+                class="analyze-btn"
+                onclick="analyzeInbox()"
+            >
+                Analyze Inbox
+            </button>
+
+        </div>
+
+        <div id="analysis">
+
+            Click Analyze Inbox
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+let selectedEmail = null;
+
+/* LOAD INBOX */
+
+loadInbox();
+
+async function loadInbox(){
+
+    const response =
+        await fetch("/gmail/inbox");
+
+    const emails =
+        await response.json();
+
+    const list =
+        document.querySelector(
+            ".email-list"
+        );
+
+    list.innerHTML = `
+
+        <div class="section-title">
+            Inbox
+        </div>
+
+    `;
+
+    emails.forEach(email => {
+
+        list.innerHTML += `
+
+        <div
+            class="email-card"
+            onclick="openEmail('${email.id}')"
+        >
+
+            <h4>
+                ${email.sender}
+            </h4>
+
+            <p>
+                ${email.subject}
+            </p>
+
+        </div>
+
+        `;
+
+    });
+
+}
+
+/* OPEN EMAIL */
+
+async function openEmail(id){
+
+    const response =
+        await fetch(
+            "/gmail/read/" + id
+        );
+
+    const email =
+        await response.json();
+
+    selectedEmail = email;
+
+    document.getElementById(
+        "email-subject"
+    ).innerText =
+        email.subject;
+
+    document.getElementById(
+        "email-body"
+    ).innerText =
+        email.body || "No Content";
+
+    document.getElementById(
+        "reply-subject"
+    ).value =
+        "Re: " + email.subject;
+
+}
+
+/* SEND REPLY */
+
+async function sendReply(){
+
+    if(!selectedEmail){
+
+        alert(
+            "Select an email first"
+        );
+
+        return;
+    }
+
+    let form =
+        new FormData();
+
+    form.append(
+        "to",
+        selectedEmail.sender
+    );
+
+    form.append(
+        "subject",
+        document.getElementById(
+            "reply-subject"
+        ).value
+    );
+
+    form.append(
+        "body",
+        document.getElementById(
+            "reply-body"
+        ).value
+    );
+
+    const response =
+        await fetch(
+            "/gmail/reply",
+            {
+                method:"POST",
+                body:form
+            }
+        );
+
+    const data =
+        await response.json();
+
+    alert(
+        "Reply Sent Successfully"
+    );
+
+}
+
+/* SEND NEW EMAIL */
+
+async function sendNewEmail(){
+
+    let form =
+        new FormData();
+
+    form.append(
+        "to",
+        document.getElementById(
+            "email-to"
+        ).value
+    );
+
+    form.append(
+        "subject",
+        document.getElementById(
+            "email-compose-subject"
+        ).value
+    );
+
+    form.append(
+        "body",
+        document.getElementById(
+            "email-compose-body"
+        ).value
+    );
+
+    const response =
+        await fetch(
+            "/gmail/send",
+            {
+                method:"POST",
+                body:form
+            }
+        );
+
+    const data =
+        await response.json();
+
+    alert(
+        data.status
+    );
+
+}
+
+/* AI INBOX ANALYSIS */
+
+async function analyzeInbox(){
+
+    document.getElementById(
+        "analysis"
+    ).innerHTML =
+        "Analyzing Inbox...";
+
+    const response =
+        await fetch(
+            "/gmail/analyze"
+        );
+
+    const data =
+        await response.json();
+
+    document.getElementById(
+        "analysis"
+    ).innerHTML =
+        data.analysis;
+
+}
+
+/* AI REPLY */
+
+async function generateAIReply(){
+
+    if(!selectedEmail){
+
+        alert(
+            "Select an email first"
+        );
+
+        return;
+    }
+
+    let form =
+        new FormData();
+
+    form.append(
+        "content",
+        document.getElementById(
+            "email-body"
+        ).innerText
+    );
+
+    const response =
+        await fetch(
+            "/gmail/generate_reply",
+            {
+                method:"POST",
+                body:form
+            }
+        );
+
+    const data =
+        await response.json();
+
+    document.getElementById(
+        "reply-body"
+    ).value =
+        data.reply;
+
+}
+
+</script>
+
+</body>
+</html>

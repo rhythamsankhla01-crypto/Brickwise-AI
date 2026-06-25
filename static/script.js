@@ -110,3 +110,7 @@ recognition.onresult = (event) => {
 recognition.onerror = (event) => {
     console.log("Speech Error:", event.error);
 };
+
+document.getElementById("chatForm").addEventListener("submit", function () {
+    document.getElementById("messageInput").value = "";
+});

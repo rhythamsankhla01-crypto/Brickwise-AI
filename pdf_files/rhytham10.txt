@@ -1,0 +1,78 @@
+Machine Learning Engineer Roadmap & Tools Guide
+1. Foundations
+1
+Mathematics: Linear Algebra, Probability & Statistics, Basic Calculus
+2
+Programming: Python (loops, functions, OOP, file handling, exceptions)
+2. Core Libraries
+1
+NumPy – numerical operations
+2
+Pandas – data manipulation
+3
+Matplotlib / Seaborn – data visualization
+3. Machine Learning Basics
+1
+Supervised Learning: Linear Regression, Logistic Regression, KNN, Decision Tree, Random
+Forest, SVM, Naive Bayes
+2
+Unsupervised Learning: K-Means, Hierarchical Clustering, PCA
+3
+Concepts: Overfitting, Underfitting, Cross Validation, Bias-Variance Tradeoff
+4. Tools & Libraries
+1
+Scikit-learn (core ML library)
+2
+XGBoost / LightGBM (advanced models)
+3
+TensorFlow / PyTorch (deep learning)
+5. Data Handling & Feature Engineering
+1
+Handling missing values
+2
+Encoding techniques (Label, One-hot)
+3
+Feature scaling (Normalization, Standardization)
+4
+Feature selection
+6. Projects
+
+1
+Beginner: House Price Prediction, Spam Detection
+2
+Intermediate: Fake News Detection, Recommendation System
+3
+Advanced: Chatbot, Image Classifier
+7. Deployment
+1
+Flask / FastAPI
+2
+Streamlit
+3
+REST APIs
+8. Version Control & Databases
+1
+Git & GitHub
+2
+SQL (SELECT, JOIN, GROUP BY)
+3
+MongoDB (basic)
+9. Advanced Tools (MLOps & Cloud)
+1
+Docker, Kubernetes
+2
+MLflow, Airflow
+3
+AWS / Google Cloud / Azure
+Final Skill Stack
+1
+Python, NumPy, Pandas
+2
+Scikit-learn / PyTorch
+3
+SQL, GitHub
+4
+Deployment (Flask/Streamlit)
+5
+Projects on GitHub
+

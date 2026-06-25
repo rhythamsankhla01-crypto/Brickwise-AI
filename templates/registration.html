@@ -135,21 +135,17 @@
                     <span>OR</span>
                 </div>
 
-                <!-- GOOGLE BUTTON -->
-                <a href="{{ url_for('google_login') }}" class="google-btn">
-                    <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
-                        alt="Google"
-                    >
-
-                    Continue with Google
-                </a>
 
                 <!-- LOGIN -->
                 <div class="login-link">
                     Already have an account?
                     <a href="/login">Login</a>
                 </div>
+
+                <a href="{{ url_for('google_login') }}" class="google-btn">
+                    <i class="fa-brands fa-google"></i>
+                    Continue with Google
+                </a>
 
             </form>
 

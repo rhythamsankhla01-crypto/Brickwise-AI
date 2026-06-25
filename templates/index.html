@@ -90,7 +90,6 @@
     method="POST"
     enctype="multipart/form-data"
     class="input-wrapper"
-    onsubmit="clearTextarea()"
 >
 
     <!-- PDF FILE INPUT -->
@@ -108,8 +107,8 @@
         id="messageInput"
         name="message"
         placeholder="Write a message here..."
-        required
-    ></textarea>
+        required 
+    >{{ question }}</textarea>
 
     <div class="input-bottom">
 
