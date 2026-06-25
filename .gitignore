@@ -5,3 +5,6 @@ instance/
 *.db
 oauth_errors.log
 chroma_memory/
+chat_history/
+image_files/
+pdf_files/
