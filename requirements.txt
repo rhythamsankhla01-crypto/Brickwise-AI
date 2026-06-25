@@ -1,60 +1,20 @@
 Flask==3.1.3
-Flask-SQLAlchemy==3.1.1
 gunicorn==26.0.0
 
 python-dotenv==1.2.2
 requests==2.34.2
 
-Jinja2==3.1.6
-Werkzeug==3.1.8
+Flask-SQLAlchemy==3.1.1
 
-# -------------------------
-# NUMPY / SCIENCE STACK (IMPORTANT FIX)
-# -------------------------
-numpy==1.26.4
-scipy==1.11.4
-scikit-learn==1.5.1
-
-# -------------------------
-# PYTORCH + NLP STACK (STABLE COMBO)
-# -------------------------
-torch==2.1.2
-transformers==4.41.2
-tokenizers==0.19.1
-sentence-transformers==3.0.1
-
-# -------------------------
-# VECTOR DATABASE / SEARCH
-# -------------------------
-chromadb==0.5.5
-faiss-cpu==1.7.4
-
-# -------------------------
-# GOOGLE / OPENAI APIs (SAFE)
-# -------------------------
-openai==2.38.0
-google-generativeai==0.8.6
-google-genai==2.9.0
-
-# -------------------------
-# OCR / PDF / UTILS
-# -------------------------
-pytesseract==0.3.13
-pypdf==6.12.2
-PyPDF2==3.0.1
-Pillow==12.2.0
-
-# -------------------------
-# AUTH / SECURITY
-# -------------------------
 Authlib==1.7.2
 cryptography==48.0.0
 bcrypt==5.0.0
 
-# -------------------------
-# OPTIONAL SUPPORT LIBS
-# -------------------------
-tqdm==4.67.3
-joblib==1.5.3
-regex==2026.5.9
-PyYAML==6.0.3
+Jinja2==3.1.6
+Werkzeug==3.1.8
+
+pytesseract==0.3.13
+Pillow==12.2.0
+
+pypdf==6.12.2
+PyPDF2==3.0.1
