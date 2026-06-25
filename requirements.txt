@@ -18,3 +18,7 @@ Pillow==12.2.0
 
 pypdf==6.12.2
 PyPDF2==3.0.1
+
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
