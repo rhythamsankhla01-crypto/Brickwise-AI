@@ -16,7 +16,6 @@ from dotenv import load_dotenv
 # Gmail
 from email.mime.text import MIMEText
 from google.oauth2.credentials import Credentials
-from googleapiclient.discovery import build
 
 # PDF support (Lightweight, safe for Render Free)
 try:
